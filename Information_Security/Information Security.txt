@@ -1,0 +1,62 @@
+Information Security:
+        INformation:
+                - Data that is in organized form.
+        Security:
+                - Physical Security
+                - Personal Security
+                - Operations Security
+                - Communication Security
+                - Network Security
+                - Information Security
+        Information Security
+                - Protection of INformation including systems and hardware, Stored and tramission.
+        Critical Charactics:
+                - Avalibility
+                - Accuracy
+                - Authenticity
+                - Confidentiality
+                - Integrity
+                - Utility
+                - Possession
+        Subset of Information Security
+                - Cyber Security
+                - Computer Security
+                - Network Security
+                - Internet Security
+        CNSS Model (Committe on Natioal Security Systems) 3 diamensional security
+                - CIA (Confidentiality, Integrity, Avalibility)
+                - TSP (Transmission, Storage, Processing)
+                - TATP (Tech, Policies and Practicies, People)
+        Acpets:
+                - Security Attacks (Passive and Active)
+                        - Passive Attack (Malwares -> Spy, Taffic Analyzer)
+                        - Active Attack (Interfare in between Transmission, change messages or contents in communication)
+                        - Reply, Data Modification, Masquerade and Denial of Service
+        Security Services:
+                - Authentication
+                - Access Control
+        Security Mechanism:
+                - Cryptography
+                - Data Integrity
+                - Data Signature
+                - Authentication
+                - Traffic padding
+
+        Symmetric Cipher Model:
+                - Plaintext:
+                - Secret key (AES algorithm)
+                - Ciper Text
+                - Decryption algorithm
+
+        Crypt Analysis and Brute Force Attack
+                - Cryptanalysis reply on the nature of the algorithm.
+                - Attacker tries every possible key on cipher text.
+
+        Type of Ciphers:
+                - Substitution Ciphers (Rot13 and XOR Ciphers)
+                - Transposition Ciphers
+
+
+Example:
+        This is my secret text. Cipher Xor
+

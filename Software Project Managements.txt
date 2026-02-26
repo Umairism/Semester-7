@@ -1,0 +1,205 @@
+Lecture 2:
+        Initial:
+            Objective:
+                Problem identification, Functional and Non Functional requirnments, Scopes.
+
+                Project Charter: Objectives, Scopes, Stakeholders, and authorities.
+                    Stakeholders Indentification.
+
+        Planning:
+            Objective: Total Scopes, Refining and Defining course of action
+                Activities:
+                    - Develope PM plan
+                    - Scope, Schedule and Budget
+                    - Risk Management Planning Resource
+                    - Planning
+                    - Communication Planning
+                Deliverables:
+                    - Plan
+                    - Work Breakdown Structure
+                    - Gantt Charts
+                    - Risk Register
+                    - Project Charter
+        Execution:
+            Objective: Complete work with meeting project objectives.
+                Activities:
+                    - Task and Resource Allocations.
+                    - Team Developments and Leadership
+                    - Quality Assurance
+                    - Communication with Stakeholders
+                Deliverables:
+                    - Deliverables as per project plan
+                    - Performance Reports
+        Monitoring:
+            Objective: Track, Review and Regulation
+                Activities:
+                    - Performance Measurement
+                    - Risk Monitoring
+                    - Quality Control
+                Deliverables
+        Closing:
+            Objective: Finalizing all projects activities
+                Activities:
+                    - Deliver Final Product
+                    - Obtain Stakeholders Acceptance
+                    - Conduct Post-Implementation Review
+                    - Document lessions learned
+                    - Resource regethering
+
+    Role of Project Manager:
+                    - Defining planing of project
+                    - Client to developer communication and vise versa.
+                    - Team leadership qualities (Qualities and no faviortism)
+                    - Stakeholders Comminicatons
+                    - Risk Management
+                    - Quality Assurance
+                    - Budger Management
+                    - Change Management
+                Essential Skills:
+                    - Technical Knowledge:
+                    - Leadership
+                    - Comminicatons
+                    - Problem-Solving
+                    - Time Management
+                    - Negotiation
+____________________________________________________________________________________
+
+Dicussion Questions:
+1. How does PM in Soft-dev differ from other industries.
+2. Can you think of a project where poor project management led to its faliure? What could have been done differnetly?
+3. How do different project management methodologies impact the role of project management.
+
+____________________________________________________________________________________
+
+Lecture 3:
+    Understanding the Software Development Life Cycle (SDLC):
+        - Definition;
+            -> Structured process used for developing information system
+        - Importance in Software Development
+            -> Provide a systematic approach
+            -> Enhances Quality and manageability
+            -> Clear communication with Stakeholders
+
+        Models:
+            = Waterfall Model
+                Defination:
+                    A linear and sequential approach
+                Phases:
+                    - Requirnments Gethering and Analysis
+                    - System Designs
+                    - Implimentation
+                    - Integration and Testing
+                    - Deployment
+                    - Maintainance
+                Advantages:
+                    - Simple and Easy
+                    - Well-documented, clear tracking
+                    - well-dedfined requirnments
+                Disadvantages:
+                    - Inflexiable to change
+                    - Late detection of defects can be costly
+                    - Not ideal for complex or long-term projects
+                Use Cases:
+                    - Stable requirnments
+                    - Industries like construction and manufacturing
+            = Agile Model
+                Definition:
+                    An itrative and incremental approach
+                Key Principles:
+                    - Individuals and interactions over processes and tools
+                        - better Communication leads to better performance
+                    - Working softwares over comprehensive documentation
+                    - Customer collaboration over contact negotiation
+                        - value of ongoing collaburation with customers throughout the project
+                    - Responding to change
+                        - Flexibility of changes of phases, open to adjustments to better meet objectives.
+            = Scrum
+                Definition:
+                    Focus on sprints
+                Roles:
+                        - Scrum master
+                        - Product Owner
+                        - Development Teams
+                    Ceremonies:
+                        - Sprint
+                        - Sprint Planning
+                        - Daily Standups
+                        - Sprint Reviews
+                        - Sprint Retrospective
+                        - Product Backlogs
+                        - Sprint Backlogs
+
+                Advanteages:
+                    - Highly Flexible and adaptable to changes
+                    - Satisfactions, Flexiable for updates and Delivery
+                Disadvantages:
+                    - Required experenced team
+                    - Budget and Timelines
+                    - less emphasis on documentations
+                Use Cases:
+                    Evolving requirenemnts
+                    Startups and innovative projects.
+
+            = Itrative Model
+                Definition:
+                    Repeated cyles(Itrations) and in a smaller portions at a time
+                Phases:
+                    - Planning
+                    - Design
+                    - Implimentation
+                    - Testing
+                    - Evaluation
+                Advantages:
+                    - Incremental improvements
+                    - Early Detection of issues
+                    - Flexibily to incorporate changes in each itration
+                Disadvantages:
+                    - Increase in cost and time if itration not managed
+                    - Required strong project management Knowledge
+                Use Cases:
+                    - Large and Comples projects
+                    - Project where there is need for itrations.
+
+        Best Model Selections:
+            Factors:
+                - Projects Requirnments
+                - Project Size and Complexities
+                - Costomer Involvement
+                - Risk Management
+                - Time and Budget Constraints
+                - Team Expertises
+            Decision-Making Framework
+                - Assess requirenemnts stable:
+                    - Stable -> Waterfall and Itrative
+                    - Evolving -> Agile
+                - Evaluating Project Size
+                    - Large and Complex -> Itrative
+                    - Small to Medium -> Agile or Waterfall
+                - Consider Customer Involments
+                    - High -> Agile
+                    - Low -> Waterfall
+                - Analyze Risk Factors:
+                    - High risk requireing Flexibility -> Agile and Itrative
+                    - Low risk with clear pathways -> Waterfall
+                - Resource Availability
+                    - Skilled teams For agile -> Agile
+                    - Limited resources -> Waterfall or Itrative
+
+        Project Integration Management
+            - Each element of project/product must coordinate with eachother.
+
+            Defination:
+                - A document that formally authorizes a project
+            Components:
+                - Project Purpose
+                - Measureables
+                - High-Level Requirnments
+                - Assumptions and Constraints
+                - High-Level Risks
+            - Summary Milestone Schdule
+            - Assigned Project Manager and Autherity Level
+            - Stakeholders List
+            - Process
+                - Inputs
+                - Tools & Techniques
+                - Output

@@ -1,0 +1,103 @@
+Graphics Computing and HCI (Human computer interactions)
+    Creation of Object form the scratch,
+        Frame Buffer -> Temporary Location to prevent Delay while Processing/Displaying image(graphics) {Synchronious Process}
+
+    2D Graphics:
+        Transformation:
+            Change in size, change in position, change in angle
+    3D Graphics:
+        X,Y,Z axis along with lightning, etc
+    Renderding:
+
+    Animation:
+
+    Visualization:
+
+    Computer Aided Designs CAD:
+
+    Image Processing | Computer Graphics | Pattern Recognition
+    Advancements        Creation from
+    Editing             scratch
+    Enhancements
+    Alteration
+
+    Usage of Computer Designed Pictures:
+        - Arts,Entertainments and publishing
+        - Movie production, Animation and Special Effects
+        - Computer Games
+        - Browsers on WWW
+        - Paint System
+        - Monitoring a process
+        - Displaying Simulations
+        - Computer aided designs
+    Applications:
+        - GUI (Menus, Icons, Cursors, Dialog Boxes etc)
+        - Scientific Visualization (Presentation Graphics)
+        - Entertainments
+        - Architectural Scenes
+        - Medicine
+        - Virtual World
+        - Education
+
+
+Lecture 3:
+    Elements of Pictures created in Computer Graphics include:
+        - Pixels
+        - Color
+        - Shapes and Object
+        - Textures
+        - Lighting
+        - Rendering Technique
+        - Composition
+        - Effects
+    Elements:
+        - Poly line (Multiple lines)
+        - Text
+        - Filled region
+        - Raster Images vs Vectors
+    Types of Graphics Systems:
+        - Active
+        - Passive
+    CSG (Constructive Solid Geometry)
+
+
+Graphics Display Devices:
+    - Vector Display
+        - Ossiloscope (CRT)
+            - Phosphers
+                - Flouresence
+                - Phospherresence
+                - Presistence
+                    - Long Presistence
+                    - Short Presistence
+            - DVST
+            - Calligraphic or random scan Display System
+            - Raster Scan Display
+    - Raster Displays
+        - Raster
+        - Pixel
+        - Scan (Array of Pixels) (Fixed Scan Pattern)
+            - left to Right, Top to bottom
+            - FrameBuffer
+            - Graphics Card
+        - LUT (Look Up Table) memory
+            - 2^w total colors
+            - 2^b colors per time
+        - Size of Framebuffer and LUT memory
+
+        - Active Matix Display
+
+Graphics Pipeline Stages:
+    - Appication    |
+    - Commands      | CPU
+
+    - Geometry      |
+    - Rasterization |
+    - Fragment      |
+    - Display       | GPU
+
+    Formation of Image:
+        - Vertex Processing -> Transformation
+        - Clipping and Rasterization -> Convert to Pixels
+        - Fragment processing -> Compute Final Colors
+        - FrameBuffer Processing -> Blending Hidden-Surfaces

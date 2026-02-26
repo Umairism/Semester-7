@@ -1,0 +1,108 @@
+    English     |       German
+
+    A                   A(aah)
+    B                   B(Bay)
+    C                   C(Say)
+    D                   D(Day)
+    E                   E(Ay)
+    F                   F(F)
+    G                   G(Gay)
+    H                   H(ha)
+    I                   I(ee)
+    J                   J(Yot)
+    K                   K(Kah)
+    L                   L(L)
+    M                   M(M)
+    N                   N(N)
+    O                   O(N)
+    P                   P(Phay)
+    Q                   Q(Kuh)
+    R                   R(Err)
+    S                   S(ss)
+    T                   T(Thay)
+    U                   U(ou)
+    V                   V(Fow)
+    W                   W(Way)
+    X                   X(ikx)
+    Y                   Y(Epsilon)
+    Z                   Z(Set)
+
+Vovals:
+    Umlaout (A) -> Ae
+    Umlaout (O) -> Oeu
+    Umlaout (U) -> Ew
+    B(Beta) -> sset
+
+
+Greetings:
+    Hallo!
+    Guten Tag -> Good Day
+    Guten Morgen -> Good Morning
+    Guten Abend -> Good Evening
+    Guten Nacht -> Good Night
+
+    Viel -> Much
+    Viele -> Many
+    Vielen Dank -> Thankyou very much
+    Tsch (Umlaout)U ss -> Bye (Informal)
+    Auf wiedersehen -> Byee (Formal)
+    Ciao -> Bye
+    Auf wiederseh (Umlaout)O ren -> Bye (Formal on telephone)
+    Danke -> Thankyou
+    KeinProblem  -> no Problem
+
+    Wie heiBen Sie? -> How are you called
+    Was ist Ihren Name? -> what is your name
+
+    Ich heiBe Umair -> I am called Umair
+    Ich bin Umair -> I am Umair
+    Mein Name ist Umair -> My name is Umair
+
+    Woher Kommen Sie? -> from where you come
+    Ich Komme aus Pakistan -> I am from Pakistan
+
+    Wo Wohnem Sie? Where to live?
+    Ich Wohne in Islamabad -> I live in Islamabad
+
+    Wie geth es Ihnen? How are you?
+    Ich bin gut -> its been good
+    Mir geth es gut
+    Es geth mir gut
+
+    ______________________________________________________________
+
+Lecture 2:
+        Deutsch Usterrricht -> German Class
+
+    Vorstellen -> Introduction
+
+    Name -> Ich Hei(Beta)e Umair
+    Alter (Age) -> Ich bin 22 jahre alt
+    Land (Country) -> Ich Komme aus Pakistan
+    Wohnort (To Live) -> Ich Wonne aus Islamabad
+    Beruf (Professional)-> Ich bin student
+    Spracen (Language) ->
+    Hobby -> mein hooby ist b Umlout(U)cher lesen
+
+
+
+    Personal Pronouns                       |           Kommen (To come)                |              Wohnen
+    ich (I)                                 |   Komme (main aya)                        |   wohne
+    Du (informal)(You)Singular              |   Kommst                                  |   wohnst
+    Er / sie / Es (he/she/it)               |   kommt                                   |   wohnt
+    Wir (we)                                |   Kommen                                  |   wohnen
+    Ihr (You) (Prural)                      |   kommt                                   |   wohnt
+    Sie (Formal -> You)                     |   kommen                                  |   wohnen
+    sie (They)                              |   kommen                                  |   wohnen
+
+Counting:
+    1-  eins                11- elf                 21- ein und zawanzig             31- ein und drei(Beta)ig
+    2-  zwei                12- zw Umlaout(O) lf    22- zwei und zawanzig            32- zw Umlaout(O)F und drei(Beta)ig
+    3-  drei                13- dreizehn            23- drei und zawanzig            33- drei und drei(Beta)ig
+    4-  vier                14- viazehn             24- via und zawanzig             34- vier und drei(Beta)ig
+    5-  f Umlaout(U) nf     15- fl Umlaout(U)F zehn 25- fl Umlout(U)F und zawanzig   35- fl Umlaout(U)F und drei(Beta)ig
+    6-  sechs               16- sechzehn            26- sech und zawanzig            36- sech und drei(Beta)ig
+    7-  sieben              17- siebzehn            27- sieb und zawanzig            37- sieb und drei(Beta)ig
+    8-  acht                18- achtzehn            28- acht und zawanzig            38- acht und drei(Beta)ig
+    9-  neun                19- neunzehn            29- neun und zawanzig            39- neun und drei(Beta)ig
+    10- zehn                20- zwanzig             30- drei(Beta)ig                 40- verizig
