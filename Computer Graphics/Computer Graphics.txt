@@ -1,3 +1,7 @@
+Command to compile cpp code.
+/usr/bin/g++ -fdiagnostics-color=always -g Main.cpp -o Main -lGL -lGLU -lglut 2>&1
+
+
 Graphics Computing and HCI (Human computer interactions)
     Creation of Object form the scratch,
         Frame Buffer -> Temporary Location to prevent Delay while Processing/Displaying image(graphics) {Synchronious Process}

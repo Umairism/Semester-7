@@ -23,9 +23,9 @@ int main(int argc, char** argv) {
   glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 
   glutInitWindowPosition(80, 80);
-  glutInitWindowSize(400, 300);
-  glutCreateWindow("A Simple Triangle");
-
+  glutInitWindowSize(500, 500);
+  glutCreateWindow("A Simple Square");
+  // gluOrtho2D(-500, 500, -500, 500);
   glutDisplayFunc(display);
   glutMainLoop();
 }
