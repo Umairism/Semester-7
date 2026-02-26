@@ -150,9 +150,10 @@ void display() {
     drawLine(20, 55, 540, 55, OUTLINE_R, OUTLINE_G, OUTLINE_B, 2.0f);
 
     // ── Debug grid overlay ──
-    if (showGrid) {
-        drawGrid();
-    }
+    
+    // if (showGrid) {
+    //     drawGrid();
+    // }
 
     glFlush();
 }
