@@ -144,3 +144,32 @@ Activity 1: (Yahoo! India Webpage)
 Activity 2: HTML & CSS login page (fully Minimalist)
 
     ./home/umairism/Desktop/Semester 7/Computer Graphics/Lab_Task/login.html
+
+
+Transformations:
+    - Solid body transformations
+	- Affine transformations
+
+    Affine Transformations:
+        - Translation – Move object
+        - Scaling – Resize object
+        - Rotation – Turn object
+        - Reflection – Mirror object
+        - Shearing – Slant object
+    Translation:
+        - Moves an object from one position to another.
+        - Formula (2D): (x′,y′)=(x+tx,y+ty)
+        - Formula (3D): (x′,y′,z′)=(x+tx,y+ty,z+tz)
+        
+        Matrix for 2D transformations
+        |1  0   tx|
+        |0  1   ty|
+        |0  0   1 |
+
+        Matrix For 3D transformations
+        |1  ?   ?   ?|
+        |?  1   ?   ?|
+        |?  ?   1   ?|
+        |?  ?   ?   1|
+
+    Scaling:
