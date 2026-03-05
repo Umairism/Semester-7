@@ -106,3 +106,41 @@ Graphics Pipeline Stages:
         - Clipping and Rasterization -> Convert to Pixels
         - Fragment processing -> Compute Final Colors
         - FrameBuffer Processing -> Blending Hidden-Surfaces
+
+Jakob Neilson's 10 Usability Heuristics
+    - Visibility
+    - Match System & Real Orld
+    - User Control
+    - Consistancy
+    - Error prevention
+    - Rrecognition over recall
+    - Flexibility
+    - Minimalist design
+    - Helps user recover from errors
+
+Process of Interactive Designs:
+
+Paper Prototyping & Digital Wireframing
+    - Paper Prototyping (Low Fidelity)
+    - Digital Wireframing
+
+
+
+
+Activity 1: (Yahoo! India Webpage)
+
+        Points              |   Yes/No      |       Justification
+    Visibility              |   No          |   There isnt an organized set of elements, This site rush bunch of elements to user.
+    Match S & R             |   Yes         |   Logos and pictorial element on this site closely related to real world depection
+    User Control            |   Yes         |   Back buttons, undo options and navigation links allow users to freely navigate and leave pages.
+    Consistancy             |   No          |   Inconsistent font sizes, colors and layout across different sections of the page.
+    Error Prevention        |   No          |   Search bar lacks auto-suggestions or confirmation prompts to help prevent user errors.
+    Recognition over Recall |   Yes         |   Navigation menus, icons and categories are visible, reducing the need to remember paths.
+    Flexibility             |   No          |   Limited shortcuts or personalization options for experienced users.
+    Minimalist Design       |   No          |   The page is heavily cluttered with ads, links and content competing for attention.
+    Help Recover Errors     |   No          |   No clear error messages or guided recovery when something goes wrong (e.g. broken links).
+
+
+Activity 2: HTML & CSS login page (fully Minimalist)
+
+    ./home/umairism/Desktop/Semester 7/Computer Graphics/Lab_Task/login.html
