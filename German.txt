@@ -106,3 +106,75 @@ Counting:
     8-  acht                18- achtzehn            28- acht und zawanzig            38- acht und drei(Beta)ig
     9-  neun                19- neunzehn            29- neun und zawanzig            39- neun und drei(Beta)ig
     10- zehn                20- zwanzig             30- drei(Beta)ig                 40- verizig
+
+
+Definate Articals: (Bestimmer Artikel)
+
+    In english:
+        The This That
+         A, an or in German ein, eine, ein, .....
+            The cat, That Car, The Man, The Girl, That Kind
+
+Nominative Artikel:
+                |   Maskuline           |       Famiine             |       Nutral          |       Plural
+Nominative      |   The Man             |       The Women           |       The Book        |   The Books
+                |   Der Man             |       Die Frau            |       Das Bush        |   Die Bucher
+                |   Der Tisch(table)    |       Die Tur (Door)      |       Das Kind        |   Die Tische
+                |   Der Stuchl(chair)   |       Die Schule          |       Das Auto        |   Die Autos
+                |   Der Vater(Father)   |       Die Mutter          |       Das Handy       |   Das Handys
+                |   Der Student         |       Die Studentin       |       Das Bild        |   Das Studenten
+                |   Der Freund(Friend)  |       Die Freundin        |       Das Restaurent  |   Das Freunde
+                |   Der Lehrer(Teacher) |       Die Lehrerin        |       Das Frhrrad     |   Die Kinder
+                |   Der Arzt(Doctor)    |       Die Arztin          |       Das Wasser      |   Die Arzte
+
+Nominative Artikel:
+                |   Maskuline           |       Famiine              |       Nutral          |       Plural
+Nominative      |   A Man               |       A Women              |       The Book        |  A or An (Dont have Prural)
+                |   ein Man             |       eine Frau            |       ein Bush
+                |   ein Tisch(table)    |       eine Tur (Door)      |       ein Kind
+                |   ein Stuchl(chair)   |       eine Schule          |       ein Auto
+                |   ein Vater(Father)   |       eine Mutter          |       ein Handy
+                |   ein Student         |       eine Studentin       |       ein Bild
+                |   ein Freund(Friend)  |       eine Freundin        |       ein Restaurent
+                |   ein Lehrer(Teacher) |       eine Lehrerin        |       ein Frhrrad
+                |   ein Arzt(Doctor)    |       eine Arztin          |       ein Wasser
+
+
+Sentences:
+    Das ist der Tisch
+    Nein, Das Isht der stuhl
+
+    ist das der tisch
+    Nein, Das ist der stuhl
+
+    Ja, Das Ish der tisch (Is this the Teacher)
+    Ist das der lehrer
+    Nein, Das ist der studnet
+
+    Das ist mein Vater( This is my Father). Der = mein
+    Das ist meine Mutter (This is my Mother). die = meine
+
+    Das ist mein Handy.  das = mein
+    das sind meine Bucher. das = meine
+
+
+    What is your name?
+    Was ist dein name? Der Name.
+
+    ich bin gut?mude.
+    Ich habe ein Auto
+    Ich komme aus Islamabad
+
+    Ist das ein buch?
+
+    I have a Mobile.
+    Ish habe ein Handy.
+
+    This is a Mobile.
+    Das ist ein Handy
+
+    Das sind Handys
+
+
+
+Housafgaben (Homework): Sein/Haben, Basic Conversation, Vorstellen, Artikel, Nouns, Zahin(counting)

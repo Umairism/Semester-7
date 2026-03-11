@@ -9,6 +9,11 @@
 - [Lecture 3: Elements of Computer-Generated Pictures](#lecture-3-elements-of-computer-generated-pictures)
 - [Graphics Display Devices](#graphics-display-devices)
 - [Graphics Pipeline](#graphics-pipeline)
+- [Jakob Nielsen's 10 Usability Heuristics](#jakob-nielsens-10-usability-heuristics)
+- [Process of Interactive Design](#process-of-interactive-design)
+- [Activity 1: Yahoo! India Webpage — Heuristic Evaluation](#activity-1-yahoo-india-webpage--heuristic-evaluation)
+- [Transformations](#transformations)
+- [Compilation Commands](#compilation-commands)
 
 ---
 
@@ -218,4 +223,143 @@ The **graphics pipeline** is the sequence of stages that transforms 3D scene dat
 
 ---
 
-*These notes cover Computer Graphics topics from Semester 7 — fundamentals of CG & HCI, display devices (CRT, raster), graphical elements, the GPU pipeline, and image formation.*
+## Jakob Nielsen's 10 Usability Heuristics
+
+These are fundamental principles for designing user-friendly interfaces:
+
+| # | Heuristic | Description |
+|:-:|:--|:--|
+| 1 | **Visibility of System Status** | The system should keep users informed about what is going on through timely feedback |
+| 2 | **Match Between System & Real World** | Use language, concepts, and conventions familiar to the user |
+| 3 | **User Control & Freedom** | Provide undo, redo, and easy navigation so users can recover from mistakes |
+| 4 | **Consistency & Standards** | Follow platform and industry conventions — don't make users wonder if different words/actions mean the same thing |
+| 5 | **Error Prevention** | Design to prevent errors from occurring in the first place |
+| 6 | **Recognition Over Recall** | Minimize memory load by making elements, actions, and options visible |
+| 7 | **Flexibility & Efficiency of Use** | Provide shortcuts and accelerators for experienced users |
+| 8 | **Aesthetic & Minimalist Design** | Avoid irrelevant or rarely needed information — every extra element competes for attention |
+| 9 | **Help Users Recognize, Diagnose & Recover from Errors** | Error messages should be in plain language, indicate the problem, and suggest a solution |
+| 10 | **Help & Documentation** | Provide searchable help focused on the user's task |
+
+---
+
+## Process of Interactive Design
+
+### Paper Prototyping & Digital Wireframing
+
+| Method | Fidelity | Description |
+|:--|:--|:--|
+| **Paper Prototyping** | Low Fidelity | Hand-drawn sketches of interfaces for early-stage feedback — fast, cheap, disposable |
+| **Digital Wireframing** | Medium–High Fidelity | Digital layouts created with tools (e.g., Figma, Balsamiq) showing structure and interaction flow |
+
+> Paper prototypes are ideal for brainstorming and early validation, while digital wireframes are used for more detailed design iterations.
+
+---
+
+## Activity 1: Yahoo! India Webpage — Heuristic Evaluation
+
+| Heuristic | Yes/No | Justification |
+|:--|:--|:--|
+| **Visibility** | No | No organized set of elements — the site rushes a bunch of elements at the user |
+| **Match System & Real World** | Yes | Logos and pictorial elements closely relate to real-world depictions |
+| **User Control** | Yes | Back buttons, undo options, and navigation links allow free navigation |
+| **Consistency** | No | Inconsistent font sizes, colors, and layout across different sections |
+| **Error Prevention** | No | Search bar lacks auto-suggestions or confirmation prompts |
+| **Recognition Over Recall** | Yes | Navigation menus, icons, and categories are visible, reducing need to memorize paths |
+| **Flexibility** | No | Limited shortcuts or personalization options for experienced users |
+| **Minimalist Design** | No | Page is heavily cluttered with ads, links, and content competing for attention |
+| **Help Recover from Errors** | No | No clear error messages or guided recovery (e.g., for broken links) |
+
+---
+
+## Activity 2: HTML & CSS Login Page
+
+A fully minimalist login page was created as a lab task demonstrating the **Minimalist Design** heuristic.
+
+> File location: `Computer Graphics/Lab_Task/Tasks/login.html`
+
+---
+
+## Transformations
+
+Transformations are operations that modify the position, size, or orientation of objects in space.
+
+### Types
+
+| Category | Description |
+|:--|:--|
+| **Solid Body Transformations** | Preserve shape and size (rigid body) |
+| **Affine Transformations** | Preserve parallelism — includes translation, scaling, rotation, reflection, and shearing |
+
+### Affine Transformations
+
+| Transformation | Effect |
+|:--|:--|
+| **Translation** | Move an object from one position to another |
+| **Scaling** | Resize an object (enlarge or shrink) |
+| **Rotation** | Turn an object around a fixed point |
+| **Reflection** | Mirror an object across an axis |
+| **Shearing** | Slant/skew an object along an axis |
+
+---
+
+### Translation
+
+Moves an object by a displacement vector $(t_x, t_y)$ in 2D or $(t_x, t_y, t_z)$ in 3D.
+
+**2D Formula:**
+
+$$(x', y') = (x + t_x, \; y + t_y)$$
+
+**3D Formula:**
+
+$$(x', y', z') = (x + t_x, \; y + t_y, \; z + t_z)$$
+
+**2D Translation Matrix (Homogeneous Coordinates):**
+
+$$
+T = \begin{bmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+**3D Translation Matrix (Homogeneous Coordinates):**
+
+$$
+T = \begin{bmatrix} 1 & 0 & 0 & t_x \\ 0 & 1 & 0 & t_y \\ 0 & 0 & 1 & t_z \\ 0 & 0 & 0 & 1 \end{bmatrix}
+$$
+
+---
+
+### Scaling
+
+Resizes an object by scaling factors $s_x$ and $s_y$:
+
+$$(x', y') = (s_x \cdot x, \; s_y \cdot y)$$
+
+**2D Scaling Matrix:**
+
+$$
+S = \begin{bmatrix} s_x & 0 & 0 \\ 0 & s_y & 0 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+> - $s > 1$: Enlarges the object
+> - $0 < s < 1$: Shrinks the object
+> - $s = 1$: No change
+
+---
+
+## Compilation Commands
+
+Commands used to compile OpenGL C++ programs:
+
+```bash
+# Single file
+g++ -fdiagnostics-color=always -g Main.cpp -o Main -lGL -lGLU -lglut
+
+# Multiple files (e.g., House project)
+g++ -fdiagnostics-color=always -g main.cpp triangle.cpp circle.cpp square.cpp line.cpp rectangle.cpp -o House -lGL -lGLU -lglut
+```
+
+> The `-lGL -lGLU -lglut` flags link the OpenGL, GLU, and GLUT libraries respectively.
+
+---
+
+*These notes cover Computer Graphics topics from Semester 7 — fundamentals of CG & HCI, display devices (CRT, raster), graphical elements, the GPU pipeline, image formation, usability heuristics, interactive design, transformations (translation, scaling), and compilation commands.*

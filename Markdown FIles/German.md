@@ -8,6 +8,9 @@
 - [Introducing Yourself](#introducing-yourself)
 - [Personal Pronouns & Verb Conjugation](#personal-pronouns--verb-conjugation)
 - [Counting in German (1–40)](#counting-in-german-140)
+- [Definite Articles (*Bestimmter Artikel*)](#definite-articles-bestimmter-artikel)
+- [Indefinite Articles (*Unbestimmter Artikel*)](#indefinite-articles-unbestimmter-artikel)
+- [Possessive Articles & Sentence Examples](#possessive-articles--sentence-examples)
 
 ---
 
@@ -220,4 +223,87 @@ German numbers 21–99 are formed by saying the **ones digit first**, then **"un
 
 ---
 
-*These notes cover the foundational aspects of German covered in Semester 7 — the alphabet, umlauts, greetings, introductions, verb conjugation, and counting.*
+## Definite Articles (*Bestimmter Artikel*)
+
+In English, the definite article is simply **"the"**. In German, it changes based on the **gender** (masculine, feminine, neuter) and **number** (singular, plural) of the noun.
+
+### Nominative Case — Definite Articles
+
+| | Maskulin (♂) | Feminin (♀) | Neutrum (⚬) | Plural |
+|:--|:--|:--|:--|:--|
+| **Article** | **der** | **die** | **das** | **die** |
+| | der Mann (the man) | die Frau (the woman) | das Buch (the book) | die Bücher (the books) |
+| | der Tisch (the table) | die Tür (the door) | das Kind (the child) | die Tische (the tables) |
+| | der Stuhl (the chair) | die Schule (the school) | das Auto (the car) | die Autos (the cars) |
+| | der Vater (the father) | die Mutter (the mother) | das Handy (the mobile) | die Handys (the mobiles) |
+| | der Student (the student ♂) | die Studentin (the student ♀) | das Bild (the picture) | die Studenten (the students) |
+| | der Freund (the friend ♂) | die Freundin (the friend ♀) | das Restaurant (the restaurant) | die Freunde (the friends) |
+| | der Lehrer (the teacher ♂) | die Lehrerin (the teacher ♀) | das Fahrrad (the bicycle) | die Kinder (the children) |
+| | der Arzt (the doctor ♂) | die Ärztin (the doctor ♀) | das Wasser (the water) | die Ärzte (the doctors) |
+
+> **Tip:** Masculine nouns use **der**, feminine nouns use **die**, neuter nouns use **das**, and all plurals use **die**.
+
+---
+
+## Indefinite Articles (*Unbestimmter Artikel*)
+
+In English, the indefinite articles are **"a"** and **"an"**. In German, they also change based on gender. **There is no plural indefinite article in German.**
+
+### Nominative Case — Indefinite Articles
+
+| | Maskulin (♂) | Feminin (♀) | Neutrum (⚬) |
+|:--|:--|:--|:--|
+| **Article** | **ein** | **eine** | **ein** |
+| | ein Mann (a man) | eine Frau (a woman) | ein Buch (a book) |
+| | ein Tisch (a table) | eine Tür (a door) | ein Kind (a child) |
+| | ein Stuhl (a chair) | eine Schule (a school) | ein Auto (a car) |
+| | ein Vater (a father) | eine Mutter (a mother) | ein Handy (a mobile) |
+| | ein Student (a student ♂) | eine Studentin (a student ♀) | ein Bild (a picture) |
+| | ein Freund (a friend ♂) | eine Freundin (a friend ♀) | ein Restaurant (a restaurant) |
+| | ein Lehrer (a teacher ♂) | eine Lehrerin (a teacher ♀) | ein Fahrrad (a bicycle) |
+| | ein Arzt (a doctor ♂) | eine Ärztin (a doctor ♀) | ein Wasser (a water) |
+
+> **Note:** Masculine and neuter share the same indefinite article (**ein**), while feminine uses **eine**.
+
+---
+
+## Possessive Articles & Sentence Examples
+
+### Possessive Mapping
+
+When expressing possession, the definite article maps to a possessive form:
+
+| Definite Article | Possessive (my) |
+|:--|:--|
+| **der** (masculine) | **mein** |
+| **die** (feminine) | **meine** |
+| **das** (neuter) | **mein** |
+| **die** (plural) | **meine** |
+
+### Example Sentences
+
+| German | English |
+|:--|:--|
+| Das ist der Tisch. | That is the table. |
+| Nein, das ist der Stuhl. | No, that is the chair. |
+| Ist das der Tisch? | Is that the table? |
+| Ist das der Lehrer? | Is that the teacher? |
+| Nein, das ist der Student. | No, that is the student. |
+| Das ist mein Vater. | This is my father. *(der → mein)* |
+| Das ist meine Mutter. | This is my mother. *(die → meine)* |
+| Das ist mein Handy. | This is my mobile. *(das → mein)* |
+| Das sind meine Bücher. | These are my books. *(die → meine)* |
+| Was ist dein Name? | What is your name? *(der Name → dein)* |
+| Ich habe ein Auto. | I have a car. |
+| Ich habe ein Handy. | I have a mobile. |
+| Das ist ein Handy. | This is a mobile. |
+| Das sind Handys. | These are mobiles. |
+| Ist das ein Buch? | Is that a book? |
+
+> **Pattern:** "*Das ist + article + noun*" is the standard way to identify objects. For questions, invert to "*Ist das + article + noun?*"
+---
+
+### Housafgaben (Homework) 
+> Sein/Haben, Basic Conversation, Vorstellen, Artikel, Nouns, Zahin(counting)
+
+*These notes cover the foundational aspects of German covered in Semester 7 — the alphabet, umlauts, greetings, introductions, verb conjugation, counting, definite & indefinite articles, possessives, and basic sentence structures.*
