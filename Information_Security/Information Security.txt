@@ -60,3 +60,125 @@ Information Security:
 Example:
         This is my secret text. Cipher Xor
 
+
+
+
+By Hassan:
+
+18/2/2026 - Class Notes:
+
+Information inside data - how can we secure it 
+
+Three Basic pilers in security (CIA):
+1. Confidentiality 
+2. Integrity (No changes in the information/data it shouldn't be modified)
+3. Availability (He should be able to access it anywhere and anytime) 
+
+Data Encryption, Cypher, how to secure data.
+
+Information : Organized refined Data 
+Security : to be free from danger 
+- physical security 
+- Personal security 
+- operation security 
+- communication security 
+- Network Security (Working on this)
+- Information Security 
+
+Information Security : Protection of information including system and hardware used.
+
+Characteristic:
+1. Availability (Information is accessible )
+2. Accuracy (Corrected and Precision of information)
+3. Authenticity 
+4. Confidentiality 
+5. Integrity 
+6. Utility (No garbage information or extra content in information)
+7. Possession 
+
+Subsets of Information Security:
+1. Cyber Security 
+2. Computer Security 
+3. Network Security 
+4. Internet Security
+
+CNSS Model : 
+three-dimensional Security Model. 
+One dimension is Confidentiality, Integrity, Availability
+Second Dimension is Transmission, security, processing 
+Third Dimension Education training, Awareness, People 
+
+Different Groups within organization.
+
+Aspects of Information Security:
+1. Security Attack (How to Prevent this attack ) 
+ - Passive attack (Aisa malware or spy that collect information, Traffic Analyze)
+ - Active attack (Change the original message/Content and forward it - Hijacked ) - Integrity is Damaged 
+
+2. Security Services:
+ - Physical Security 
+ - Authentication and Authorization 
+ - Availability of service 
+
+3. Security Mechanism: 
+ - Cryptographic Algo 
+ - Traffic padding
+ - Access Control
+
+1. Specific Security Mechanism:
+ A Process that is designed to identify, avoid, or restore from a security attack.
+
+2. Pervasive Security Mechanism:
+ Are those which cannot e specific to particular service and in general directly related to the level 
+
+
+phishing attack - Same to same replica bana ke attack 
+
+25/2/2026 
+
+Encryption and Decryption -> Search
+- Symmetric (One key used for encryption and decryption) 
+- Asymmetric (Two keys used for encryption and decryption like in banks)
+stenography -> Search  
+Symmetric cipher Model:
+
+Ingredients: 
+1. Plain Text: Original Intelligent data or message that is fed into the algorithm for Encryption as input 
+2. Secret key: 
+Plain Text -> Key -> sypher Text -> Key -> Receiver 
+
+Cryptanalysis: Nature of Algorithm like some knowledge of general characteristic of the plain text (Jaisa kisi ka typing style)
+brute force attack: -> Checking every possible combination (key) for an attack.
+
+Type of cipher:
+1. Transposition cipher -> Keep all the digit but switch the Some of it 
+2. Numerical Cipher -> Convert Text to Number 
+3. ROT 13 -> Word Substitute
+ ABCDEFGHIJKLM
+ NOPQRSTUVWXYZ 
+4. XOR cipher -> Perform xor on ASCII value -> this provide key 
+Example:
+this is my secret Message.
+-> hr digit sa 11 digit agay jana hai 
+
+Cipher Text: estd td xj dpncpe xpddlrp
+
+ROT 13:  guvf vf zl frperg zrffntr
+
+XOR: ->KEY
+Example:
+SECURITY 
+KEYKEYKE
+Compare ASCII binary of S and K and perform Xor
+SECURITY 
+83 69 67 85 82 73 84 89
+  
+KEYKEYKE
+75 69 89 75 69 89 75 69 
+
+01010011 01000101 01000011 01010101 01010010 01001001 01010100 01011001
+01001011 01000101 01011001 01001011 01000101 01011001 01001011 01000101
+XOR
+00011000 00000000 00011010 00011110 00010111 00010000 00011111 00011100
+
+XOR cipher : 24 00 26 30 23 16 31 28

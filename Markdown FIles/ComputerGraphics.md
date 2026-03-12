@@ -1,31 +1,64 @@
-# Computer Graphics – Course Notes
+# Computer Graphics – Complete Course Notes
 
 ## Table of Contents
 
 - [Introduction to Computer Graphics & HCI](#introduction-to-computer-graphics--hci)
-- [Types of Graphics](#types-of-graphics)
-- [Image Processing vs Computer Graphics vs Pattern Recognition](#image-processing-vs-computer-graphics-vs-pattern-recognition)
+- [Fundamentals](#fundamentals)
+  - [Frame Buffer](#frame-buffer)
+  - [2D vs 3D Graphics](#2d-vs-3d-graphics)
+- [Distinguishing Related Fields](#distinguishing-related-fields)
+- [Types of Graphics Systems](#types-of-graphics-systems)
 - [Applications of Computer Graphics](#applications-of-computer-graphics)
-- [Lecture 3: Elements of Computer-Generated Pictures](#lecture-3-elements-of-computer-generated-pictures)
+- [Elements of Computer-Generated Pictures](#elements-of-computer-generated-pictures)
 - [Graphics Display Devices](#graphics-display-devices)
-- [Graphics Pipeline](#graphics-pipeline)
-- [Jakob Nielsen's 10 Usability Heuristics](#jakob-nielsens-10-usability-heuristics)
-- [Process of Interactive Design](#process-of-interactive-design)
-- [Activity 1: Yahoo! India Webpage — Heuristic Evaluation](#activity-1-yahoo-india-webpage--heuristic-evaluation)
-- [Transformations](#transformations)
-- [Compilation Commands](#compilation-commands)
+  - [Vector Displays](#vector-displays)
+  - [Raster Displays](#raster-displays)
+- [Graphics Pipeline & Image Formation](#graphics-pipeline--image-formation)
+- [Geometric Transformations](#geometric-transformations)
+- [Human-Computer Interaction (HCI)](#human-computer-interaction-hci)
+  - [Jakob Nielsen's 10 Usability Heuristics](#jakob-nielsens-10-usability-heuristics)
+  - [Design Evaluation & Case Study](#design-evaluation--case-study)
+- [OpenGL Fundamentals](#opengl-fundamentals)
+- [Lab & Implementation Notes](#lab--implementation-notes)
 
 ---
 
 ## Introduction to Computer Graphics & HCI
 
-**Computer Graphics** is the field concerned with the creation the of visual content (objects, images, animations) from scratch using computational methods. **HCI (Human-Computer Interaction)** studies how users interact with these graphical systems.
+**Computer Graphics (CG)** is the art and science of creating visual content—including objects, images, and animations—from scratch using computational methods and algorithms. This field combines mathematics, physics, and art to produce compelling visual experiences.
+
+**HCI (Human-Computer Interaction)** studies how people interact with computer systems through visual interfaces. The goal is to design graphics and interfaces that enhance productivity and provide intuitive, aesthetically pleasing interactions.
+
+### Core Relationship
+- **Computer Graphics** provides the visual tools
+- **HCI** ensures those tools are usable and effective
+- Together, they create systems that are both powerful and user-friendly
+
+---
+
+## Fundamentals
 
 ### Frame Buffer
 
-A **Frame Buffer** is a temporary memory location used to prevent delays while processing and displaying images. It acts as a synchronous buffer between computation and display — the image is fully composed in the buffer before being sent to the screen.
+A **Frame Buffer** is a temporary memory storage location that holds the pixel data for an image being rendered. It plays a crucial role in graphics systems by serving three main purposes:
 
-> **Key Idea:** The frame buffer ensures smooth, flicker-free rendering by decoupling image generation from display output.
+1. **Prevents Display Delays** – Images are fully computed in the frame buffer before being displayed
+2. **Synchronous Processing** – Decouples image generation from display output
+3. **Flicker-Free Rendering** – By buffering the complete image, the display refreshes smoothly without visible artifacts
+
+#### Frame Buffer Size Significance
+- **Larger frame buffers** = Higher resolution and more colors
+- **Display Circuit** reads from the frame buffer at regular intervals (60 Hz or higher) to refresh the monitor
+- **Graphics Card** manages frame buffer operations for efficient rendering
+
+### 2D vs 3D Graphics
+
+| Aspect | 2D Graphics | 3D Graphics |
+|:--|:--|:--|
+| **Axes** | X, Y | X, Y, Z |
+| **Transformations** | Change in size, position, and angle | Size, position, angle + depth perception |
+| **Properties** | Coordinates and color | Coordinates, color, texture, and lighting |
+| **Use Cases** | UI design, 2D games, diagrams | Movie production, realistic simulations, VR |
 
 ---
 

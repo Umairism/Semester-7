@@ -1,0 +1,430 @@
+Compiler construction notes:
+
+
+
+Alphabet -> Lexical Analysis (Words)-> Syntax Analysis (Sentences)-> Semantic Analysis (Meaningful sentences) } source language understanding
+
+-> Intermediate Code Generation (Memory Representation)-> Code Optimization (Optimize Memory Rep)-> Target code Generation } Target Language Understanding
+
+we all do the above task to make -> MUL Code 
+
+
+
+Lexical Analysis:
+
+
+
+Alphabet ->(Lexical Analysis) Words
+
+
+
+Categories/Tokens of Words:
+
+
+
+1\. Keywords (Predefined) - finite 
+
+2\. Identifiers (variable name, class name, package name, array name etc..) - infinite number of possibilities 
+
+3\. Numbers - infinite 
+
+4\. Literals - infinite but character finite(String value or character value)
+
+5\. Comments - infinite (It take it as one word)
+
+6\. Operators 
+
+
+
+We have to see if our result are finite or infinite.
+
+\- finite is deal/manage specifically meaning as they appear (Like value, Information)
+
+\- infinite is deal/manage generically. (like Formula and Rule, Data)
+
+
+
+Example:
+
+X={1,2} Finite , X <= Z+ (infinite)
+
+for finite we can deal it specifically
+
+but for infinite we deal it generically we have to use formula or rule .. (A+B)^2 etc.
+
+
+
+We need a rule where the input is a Alphabet and give output in word 
+
+1\. CFG or Regular Expression (Automata)
+
+
+
+We Will be using RE.
+
+E= {a,b}
+
+rule a\*b
+
+output = {ab,aab,b,aaab.....}
+
+
+
+\- Flow a.b
+
+\- OR a+b, a|b
+
+\- Loop a\*
+
+\- A^+ 
+
+
+
+Representation:
+
+
+
+Terminals - Alphabets 
+
+Non Terminals - Variables
+
+
+
+we know that everything even mouse click are consider Alphabets so we write it as 
+
+
+
+<Lexical> => (<key>|<id>|<Num>|<literal>|<Comments>|<op>)^+ (Because it should be at-least one)
+
+
+
+<key> => if|else|while|int|...
+
+<id> => (\_|<A>)(\_|<A>|<de>)\*    where A all Alphabets de 0,1,2,3...9...
+
+<Num> => +|-|E (<int>|<float>)  E epsilon 
+
+<int> => <de>+
+
+<float> => <de>\*.<de>+
+
+<literal> => <char>|<string>
+
+<All> => <A>|<de>|<sc>|<exp>|<op>
+
+<char> => '<All>' 
+
+<string> => "<All>+"
+
+<Comments> => <single>|<multi>
+
+<single> => //<All>\*  (End-line operator)
+
+<multi> => /\*<All>\* \*/
+
+<op> => <Arithmetic>|<logical>|<Compound>
+
+<Arithmetic> => +|-|\*|%|/
+
+<logical> => <collop>|<copop>
+
+<collop> => \&\& | ||
+
+<copop> => <|>|>=|<=|==|!=
+
+<Compound> => ++|--|+=|-=|\*=|/=|%=
+
+
+
+1\. RE Implementation
+
+2\. RE -> Automate ->
+
+
+
+Regex -> will tell if the word is legal/correct  or not (Add Library and check this in python take an RE and Test it) - Home work 
+
+
+
+\- 2/16/2026 Theory Lecture 
+
+
+
+If we directly implement RE the details that should be preserved is skipped that's why we Automate.
+
+Options:
+
+RE -> NFA -> Implement (not applicable)
+
+RE -> DFA -> Implement 
+
+&nbsp; 
+
+**NFA 						DFA**
+
+Non deterministic				Deterministic 
+
+Detailed 					Summarized (skipped detail)
+
+Elobrative
+
+Not suitable for implementation			Compact
+
+&nbsp;						suitable for imlementation
+
+
+
+Solution: RE -> NFA -> DFA -> Implement 
+
+This make sure the required details are preserved.
+
+
+
+DFA
+
+* Complete DFA (Table is complete all values are filled)
+* Characteristic DFA (Table has empty) 
+
+Characteristic DFA:
+
+&nbsp;						a						b
+
+|1|2|3|
+|-|-|-|
+|2|3|4|
+|3|4|-|
+|4|-|5|
+|5|-|-|
+
+
+
+
+
+note: if a table has transition for two or more in one state its not a DFA 
+
+
+
+Example for E={a,b} Re: ab\*
+
+state 1 -> (a) -> state 2 (loop b) -> (a) -> Error
+
+|
+
+\\-> (b) -> Error (Self loop of a,b)
+
+
+
+||a|b|
+|-|-|-|
+|state 1|state 2|Error|
+|state 2|Error|state 2|
+|Error|Error|Error|
+
+
+
+Error Handling
+
+
+
+Characteristic Mechanism
+
+&nbsp;
+
+1 -> 50 km -> 2 -> 60km -> 4
+
+|			 >
+
+-> 70 km -> 3 -> 80 km / 
+
+
+
+here we dont need to make another transition for other ike 1km to infinity there is no need.
+
+
+
+Finite States:
+
+* Starting state
+* accepting state 
+
+
+
+Transition:
+
+* Legal 
+* Illegal 
+* No transition
+
+
+
+There is time to go from one transition to another. meaning it consume energy in the from of time
+
+that means no transition is not meaningless (like there is a transition for Epsilon still it will take time for that transition)
+
+
+
+RE -> NFA : Thomson's 
+
+* Picture on your phone 
+
+
+
+Draw in sequence first one is starting connect/bind last state to next state with epsilon and the last state is accepting state
+
+
+2/17/2026 - LAB 
+
+Follow and OR a|b - in picture 
+
+(abc)|(bc)
+
+s - E - s - a - s - E - s - b - s - E - s - c - s - E - +
+|
+- E - s - b - s - E - s - c - s - E - +
+
+Now Loop a*:
+In picture 
+
+If we see a* and (a*)* this is the detail we want to preserve 
+Example {(abc)|(bc)}* and [{(abc)|(bc)}*]*in picture 
+
+For OR And OR loop - in picture 
+
+Topic Competed RE - NFA Above 
+RE - NFA - DFA - Implement 
+
+Class task:
+(ab)*|(a*b*)* (pic in phone)
+
+Now NFA to DFA:
+Subset Construction Method 
+Steps: (Example pic on phone)
+1. Epsilon closure -> E-Closure(States)
+2. Merging of Sets that we creating in step 1 (Repetition remove) if one state is a subset of another state
+3. Mov(E-Closure(States),symbol) make transition after finding move sets 
+4. E-Closure(Mov(E-Closure(States),symbol))
+5. Collection 
+	Criteria! -> Initial State of a shape should be stored to the ending state of other shape 
+
+
+2/23/2026 - Theory class:
+RE - NFA - DFA - Optimize DFA - Implement 
+
+DFA Optimization:
+
+Make Transition table of DFA
+- separate it into two (Accepting state and non accepting state)
+- Then Merge state based on transition 
+
+Example table - picture 
+  a  b  c
+1 2  3  3 ] non accepting state below 
+2 2  3  -
+3 3  4  4
+4 4  4  5
+5 5  5  7
+6 5  5  7 ] accepting state below
+7 7  8  7
+8 7  8  -
+
+- Make table using table and merge 1,2 and 7,8
+
+Code:
+string word;
+input word;
+int state=1;
+for (int i=0;i=word[i]!=null;i++)
+{
+switch(state)
+case 1:
+if(word[i]=='b' || word[i]=='c')
+state=5;
+else
+if(word[i]!='a')
+Error();
+break;
+
+case 2:
+if(word[i]=='c')
+state=6;
+else
+if(word[i]!='a' || word[i]!='b')
+error();
+break;
+
+case 3:
+if(word[i]=='c')
+state=4;
+else
+if(word[i]!='a' || word[i]!='b')
+error();
+break;
+
+case 4:
+if(word[i]!='a' || word[i]!='b' || word[i]!='c')
+error();
+break;
+
+case 5:
+if(word[i]=='b' || word[i]=='c')
+state=2;
+else
+if(word[i]!='a')
+error();
+break;
+
+case 6:
+if(word[i]=='c')
+state=4;
+else
+if(word[i]!='a' || word[i]!='b')
+error();
+break;
+} \\end of switch
+
+} \\end of loop
+
+if(state == 3 || state == 4)
+output="legal"
+} \\end program
+
+- loop it at the end of the word
+- you can categorized it based on the state like if it is on state 3 it is int or id etc.
+
+3/3/2026 - LAB 
+
+Syntax Analysis:
+
+Alphabet -> Lexical Analysis (words) -> Syntax Analysis (Sentence)
+if it cannot make sentence then it is a syntax Error
+
+We need a rule because there are infinite number/ process of sentences
+1. RE -> Take alphabet as input and apply rule to produce word as output 
+
+Here RE can also take word as input too and make sentences 
+but we don't take it because of its limitation like
+RE cannot iterate without sequence it can only do within sequence iteration  
+- syntax rule -> CFG because it gives us iteration without sequence 
+
+There are three things that common in RE and CFG
+1. Follow - RE CFG (Both same)
+2. OR - RE CFG (Both same)
+3. Iteration - RE Loop a* a+, CFG Recursion (it means it can do both without and within sequence)
+
+Recursive 
+1. Base case - terminating condition
+ n=1;
+ n!=1;
+2. Recursive case - Iteration 
+ n>1
+ n!=n x (n - 1)!
+
+Steps:
+
+1. CFG
+2. Sentence/Sequence
+3. Maten/correlation sentence to CFG
+	production:
+	i. M. Production 
+	ii. parse tree
+Start from the CFG try to make a sentence, only Program/sentence should appear on the leaf node

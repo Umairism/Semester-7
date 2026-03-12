@@ -173,3 +173,104 @@ Transformations:
         |?  ?   ?   1|
 
     Scaling:
+
+
+
+By Hassan:
+
+19/2/2026- Class Notes:
+HCI - Computer Graphics 
+
+HCI -> Human Computer interaction (Productivity, Visualization(Color pallets))
+- We make a better visual for humans so they can easily Interact with computer be productive.
+
+
+- GL+CG
+- History 
+- Element of Computer Graphics
+- Transition 
+- Algorithms
+- Augmented Reality 
+
+Computer Graphics:
+. Making/Creation of an image from scratch. 
+. Adding into the image is called image processing.
+
+Frame Buffer: Temporary storage for graphics 
+(Size matter for the frame buffer the bigger the better)
+
+2D -> X and y ke along image ko display krna.
+Transformation -> change in size, angle, position.
+
+3D -> x, y and z. Texture, lighting, Rendering. 
+
+Rendering: Process of generating image from 3D models or scenes.
+
+Animation: 
+
+Visualization: 
+
+CAD Computer-Aided Design: 
+
+Computer Graphics:
+- Creating from Scratch 
+
+Image Graphics:
+- Adding into image, Enhancing/Editing/Alteration the image (There is a baseline)
+Pattern Recognition (Another Field)
+
+Application of CG:
+1. GUI -> Menus, icon, cursor, buttons, boxes, grids etc. Also a part of HCI
+2. Scientific Visualization 
+ -> Representation of the data graphically 
+ -> Presentation Graphics (Presenting data through grapghs)
+3. Entertainment -> In Computer games, Advertisement, Films, Cartoon
+4. Architectural Scenes -> Modern use 3D Models for both Customer and builders (Reverse Eng)
+5. Medicine -> Perform Surgery Rehearsals through simulation  
+6. Virtual World -> Prince of Persia Game
+7. Education -> For Teaching and training  
+8. Court Rooms, Super Markets, Vehicles Navigation 
+
+
+
+Use of Computer Designed Picture:
+- Art, Entertainment and publishing
+- Computer games
+- Monitoring a process (Flow charts)
+- Display simulation 
+- Computer Aided Design CAD 
+
+2/19/2026 - LAB 1
+
+OPEN Graphic Library (GL)
+glut.h -> Save in GL 
+glut.lib -> Save in lib
+glut32.dll -> Save in System32
+
+OpenGL Utility Toolkit:
+- System independent 
+- System Api
+- Drawing basic 3D
+
+Elements in Computer Graphics:
+- GL_Point 
+- GL_Line 
+- GL_Polygon, GL_Rectangle, GL_triangle 
+
+We will work on Nodes or vertex 
+
+void Display() 
+glBegin(Element) - it will tell what to do like glBEgin(GL_LINES);
+glVertex Dimension Datatype (Datatype X, Datatype y)
+Example -> glVertex2i(10,20);
+
+glFlush(); -> TO display 
+
+void Myinit() ->Initialization 
+
+glCLearColor(R,G,B,Alpha)
+glColoe3f(R,G,B)
+glPointSize(); 
+
+Image -> Single Buffer 
+Animations -> Double Buffer

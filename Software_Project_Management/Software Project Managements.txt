@@ -203,3 +203,137 @@ Lecture 3:
                 - Inputs
                 - Tools & Techniques
                 - Output
+
+
+
+
+By Hassan:
+2/17/2026 - Class notes:
+
+Initial phase:
+- define project at a high level and perform Authorization to Proceed
+- Outline objective you want to perform (Define scope, things you need like datasets etc)
+- Stakeholders (Who is affected by the project)
+- Authority (Who has access)
+Deliverables:
+- project details/charter (Objectives, Scope, outline) 
+- stakeholder register (Jo projects banwa re hote hain) Key stakeholders you need like marketing team, IT Team, End User 
+  Note: User who you're making the project for
+(Disadvantage is too update too often to the stakeholder)
+
+Planning phase:
+- You make a refined version of what you did in initial stage.
+- Establish the total scope, refine objectives and define course of action 
+- Develop plan, Define scope, schedule, budget. Communication planning 
+Deliverables:
+- Project plan
+- Work Breakdown structure ( kon sa kaam kab karna make it into modules)
+- Gantt chart
+
+Execution Phase:
+- Complete the Work defined in the project plan to meet the project objectives or requirements 
+- Task Assignment and Resource Allocation
+- Team Development and leadership
+- Quality Assurance 
+- Communication with Stakeholder 
+Deliverables:
+- developed software modules 
+- performance report (JO jO kaam kiya wo sab report mai likha ho. It means you should have documentation of everything)
+
+Monitoring and Controlling:
+- Task review, Regulate project performance and progress
+- Performance measurement
+- Progress report
+
+Closing:
+- Finalize all the activities to formally close the project 
+- Deliver Final Product
+- Stakeholder acceptance 
+- post implementation review
+- document lessons learned 
+- Release project resources 
+
+Role of Software Project Manager:
+- Planning and Scheduling (Plans, Set timeline, allocate resources effectively)
+- Team Leaderships (Manage and Motivate Team, Resolving conflicts)
+- Stakeholder Communication (Clear and consistent communication)
+- Risk Management (Identify potential risk, asses there impact)
+- Quality Assurance
+- Budget Management 
+
+Essential Skills:
+- technical Knowledge
+- Leadership
+- Communication skills
+- Problem solving
+- time Management 
+- Negotiation
+
+24/2/2026 - Class Notes:
+TOPIC: Understanding the Software Development Life Cycle (SDLC)
+
+Def - structure process used for developing information security and software efficiently 
+Importance:
+1. Provide systematic approach
+2. Enhance quality and management of software
+3. facing clear communication among stakeholder
+
+SDLC Models
+- Waterfall Model: A linear and sequential where each phase must be complete before the next begin.
+Phases:
+Requirement Gathering and Analysis, System Design, Implementation(Coding), Integration and testing, Deployment, Maintenance.
+Adantage:
+Simple and easy, well documented, suitable of project with well defined requirements
+Disadvantage:
+Inflexible, Late detection of defects, Not ideal for complex 
+Use Case:
+suitable of project with well defined requirement 
+
+Agile Principles:
+Individual and interaction over processes and tools
+Working software over comprehensive Documentation
+Customer Collaboration over Contract Negotiation
+Responding to change over following a plan
+
+Framework 
+SCRUM - focus on sprints 
+Sprints: A time boxed iteration 1-4 week where a usable increment are created
+Roles: Scrum Master, Product Owner, Development team
+Ceremonies: Sprint planning(Define the goals and work for upcoming sprint), daily standups(a 15 min daily meetings),
+sprint reviews(Held at the end of sprint between stakeholders), sprint retrospective(No stakeholders involved between development team)
+Artifacts: Product backlog(An ordered list of everything needed of whole project), sprint backlog(Ordered list of everything but for a specific sprint), increment 
+Advantages:
+Highly flexible and adaptive to change.
+Disadvantage:
+can be challenging to predict timelines and budget
+Communication because if big Teams
+
+Iterative Model:
+Develops the system through repeated cycle(Iteration) and in smaller portion at a time 
+Phases: Planning, Design, Implementation, Testing, Evaluate 
+Advantages:
+Allows for incremental improvement
+Early detection of issue
+flexibility changes in each iteration 
+Disadvantages:
+- increased cost and time
+- require strong project management 
+Use case:
+Large and complex project 
+
+Choosing the right SDLC Model:
+Factors to Consider:
+- project requirement
+- project size and company
+- customer involvement 
+- Risk management
+- Time and budget 
+- Team Expertise 
+
+Developing Project Charter - A document that formally authorize a project or project phase
+Components:
+- Project purpose or justification
+- Measurable objectives 
+- High level requirements
+- Assumptions and Constraints 
+- High level Risk
