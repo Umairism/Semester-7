@@ -31,7 +31,7 @@ A compiler transforms source code written by humans into machine code executedby
 └────────────────────────┬─────────────────────────────────────┘
                          │
          ╔═══════════════════════════════════╗
-         ║   FRONTEND: Source Understanding   ║
+         ║   FRONTEND: Source Understanding  ║
          ╚═══════════════════════════════════╝
                          │
         ┌────────────────┴────────────────┐
@@ -50,7 +50,7 @@ A compiler transforms source code written by humans into machine code executedby
         └────────────────┬────────────────┘
                          │
          ╔═══════════════════════════════════╗
-         ║   MIDDLE-END: Transformation     ║
+         ║   MIDDLE-END: Transformation      ║
          ╚═══════════════════════════════════╝
                          │
         ┌────────────────┴────────────────┐
