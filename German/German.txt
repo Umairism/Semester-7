@@ -1,4 +1,4 @@
-    English     |       German
+English     |       German
 
     A                   A(aah)
     B                   B(Bay)
@@ -178,3 +178,34 @@ Sentences:
 
 
 Housafgaben (Homework): Sein/Haben, Basic Conversation, Vorstellen, Artikel, Nouns, Zahin(counting)
+
+
+        Pocessive Artikel:
+    ich       |          mine(Mera)
+    Du        |          dein(Tumhara)
+    Er        |          Sein(uska)(His)
+    sie       |          ihr(Us ka)(Her)
+    Es        |          Sein(uska) (its)
+    Wir       |          useir(Hamara)
+    ihr       |          Euer(Tum logo ka)
+    Sie       |          Ihr(apka)
+    sie       |          ihr(unka)
+
+
+        Der               |                  Die             |               Das               |              Die
+                          |                                  |                                 |
+    Mein(Mery Father)     |           Meine(Meri Mother)     |          Mein(Mera ghar)        |        Meine(Meri Family)
+    Dein                  |           Deine                  |          Dein                   |        Deine
+    Sein                  |           seine                  |          Sein                   |        seine
+    ihr                   |           ihre                   |          ihr                    |        ihre
+    Unser                 |           Unsere                 |          Unser                  |        Unsere
+    Euer                  |           Eure                   |          Euer                   |        euer
+    Ihr                   |           Ihre                   |          Ihr                    |        Ihr
+
+    Sie sind sher net. (Ap boht nice hain)
+    Ihr Bruder ist auch sehr nett.
+    Sie ist sehr net. (She is very nice)
+    Und ihr schwester ist auch net. (Her sister is also nice)
+    ihr schwester sind auch sehr net.
+    Kommen Sie bitte hier (Ap yahn pr ayin)
+    Kommen Sie bitter bei mir zu Hause(PLease come to my house)

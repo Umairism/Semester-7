@@ -143,29 +143,29 @@ The graphics pipeline processes data from application to display:
 
 ```
 ┌─────────────────────────────────────────┐
-│      Application Layer (CPU)             │
+│      Application Layer (CPU)            │
 │  - Commands                             │
 │  - Scene Description                    │
 └─────────────────────────────────────────┘
                     ↓
 ┌─────────────────────────────────────────┐
-│      GPU Processing                      │
-│                                          │
+│      GPU Processing                     │
+│                                         │
 │  1. Geometry Processing                 │
 │     └─ Vertex transformation            │
-│                                          │
+│                                         │
 │  2. Rasterization                       │
 │     └─ Convert to pixel grid            │
-│                                          │
+│                                         │
 │  3. Fragment Processing                 │
 │     └─ Compute colors                   │
-│                                          │
+│                                         │
 │  4. Frame Buffer Processing             │
 │     └─ Blend & compose final image      │
 └─────────────────────────────────────────┘
                     ↓
 ┌─────────────────────────────────────────┐
-│      Display on Screen                   │
+│      Display on Screen                  │
 └─────────────────────────────────────────┘
 ```
 

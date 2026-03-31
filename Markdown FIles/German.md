@@ -5,12 +5,14 @@
 - [The German Alphabet](#the-german-alphabet)
 - [Vowels & Special Characters (Umlauts)](#vowels--special-characters-umlauts)
 - [Greetings & Common Phrases](#greetings--common-phrases)
-- [Introducing Yourself](#introducing-yourself)
+- [Lecture 2 – Introduction (Vorstellen)](#lecture-2--introduction-vorstellen)
 - [Personal Pronouns & Verb Conjugation](#personal-pronouns--verb-conjugation)
 - [Counting in German (1–40)](#counting-in-german-140)
 - [Definite Articles (*Bestimmter Artikel*)](#definite-articles-bestimmter-artikel)
 - [Indefinite Articles (*Unbestimmter Artikel*)](#indefinite-articles-unbestimmter-artikel)
-- [Possessive Articles & Sentence Examples](#possessive-articles--sentence-examples)
+- [Example Sentences](#example-sentences)
+- [Possessive Articles](#possessive-articles)
+- [Homework Topics](#homework-topics)
 
 ---
 
@@ -134,15 +136,15 @@ German has special vowel characters called **Umlauts** and the **Eszett (ß)**:
 
 ---
 
-## Lecture 2 – Introduction & Verb Conjugation
-
-### Self-Introduction Template (*Vorstellen*)
+## Lecture 2 – Introduction (Vorstellen)
 
 > **Deutsch Unterricht** = German Class
 
+### Self-Introduction Topics
+
 | Category | German | English |
 |:--|:--|:--|
-| **Name** | Ich heiße Umair | My name is Umair |
+| **Name** | Ich heiße Umair | I am called Umair |
 | **Alter** (Age) | Ich bin 22 Jahre alt | I am 22 years old |
 | **Land** (Country) | Ich komme aus Pakistan | I come from Pakistan |
 | **Wohnort** (Residence) | Ich wohne in Islamabad | I live in Islamabad |
@@ -150,7 +152,9 @@ German has special vowel characters called **Umlauts** and the **Eszett (ß)**:
 | **Sprachen** (Languages) | — | — |
 | **Hobby** | Mein Hobby ist Bücher lesen | My hobby is reading books |
 
-### Personal Pronouns & Verb Conjugation
+---
+
+## Personal Pronouns & Verb Conjugation
 
 German verbs change their endings based on the subject pronoun. Here are two common verbs — **kommen** (to come) and **wohnen** (to live):
 
@@ -267,7 +271,67 @@ In English, the indefinite articles are **"a"** and **"an"**. In German, they al
 
 ---
 
+## Example Sentences
+
+### Basic Question & Answer Patterns
+
+| German | English |
+|:--|:--|
+| Das ist der Tisch. | This is the table. |
+| Nein, das ist der Stuhl. | No, this is the chair. |
+| Ist das der Tisch? | Is that the table? |
+| Ist das der Lehrer? | Is that the teacher? |
+| Nein, das ist der Student. | No, that is the student. |
+
+### Possession Examples
+
+| German | English |
+|:--|:--|
+| Das ist mein Vater. (Der = mein) | This is my father. |
+| Das ist meine Mutter. (Die = meine) | This is my mother. |
+| Das ist mein Handy. (Das = mein) | This is my mobile. |
+| Das sind meine Bücher. (Die = meine) | These are my books. |
+
+### Common Statements
+
+| German | English |
+|:--|:--|
+| Was ist dein Name? | What is your name? |
+| Ich habe ein Auto. | I have a car. |
+| Ich komme aus Islamabad. | I come from Islamabad. |
+| Ist das ein Buch? | Is that a book? |
+| Ich habe ein Handy. | I have a mobile. |
+| Das ist ein Handy. | This is a mobile. |
+| Das sind Handys. | These are mobiles. |
+
+---
+
 ## Possessive Articles & Sentence Examples
+
+### Possessive Mapping by Pronoun
+
+| Pronoun | English | Possessive (German) |
+|:--|:--|:--|
+| **ich** | I | mine (Mera) |
+| **du** | you | dein/deine (Tumhara) |
+| **er** | he | sein/seine (Uska) |
+| **sie** | she | ihr/ihre (Iska) |
+| **es** | it | sein/seine (Uska) |
+| **wir** | we | unser/unsere (Hamara) |
+| **ihr** | you (plural) | euer/eure (Tumlogo ka) |
+| **Sie** | you (formal) | Ihr/Ihre (Apka) |
+| **sie** | they | ihr/ihre (Unka) |
+
+### Possessive Articles by Gender & Number
+
+| | Masculine (Der) | Feminine (Die) | Neuter (Das) | Plural (Die) |
+|:--|:--|:--|:--|:--|
+| **my** | Mein | Meine | Mein | Meine |
+| **your** | Dein | Deine | Dein | Deine |
+| **his/her/its** | Sein/Ihr | Seine/Ihre | Sein/Ihr | Seine/Ihre |
+| **our** | Unser | Unsere | Unser | Unsere |
+| **your (pl.)** | Euer | Eure | Euer | Eure |
+| **your (formal)** | Ihr | Ihre | Ihr | Ihre |
 
 ### Possessive Mapping
 
@@ -280,7 +344,7 @@ When expressing possession, the definite article maps to a possessive form:
 | **das** (neuter) | **mein** |
 | **die** (plural) | **meine** |
 
-### Example Sentences
+### Example Sentences with Possessives
 
 | German | English |
 |:--|:--|
@@ -301,9 +365,33 @@ When expressing possession, the definite article maps to a possessive form:
 | Ist das ein Buch? | Is that a book? |
 
 > **Pattern:** "*Das ist + article + noun*" is the standard way to identify objects. For questions, invert to "*Ist das + article + noun?*"
+
 ---
 
-### Housafgaben (Homework) 
-> Sein/Haben, Basic Conversation, Vorstellen, Artikel, Nouns, Zahin(counting)
+## Advanced Practice Sentences
 
-*These notes cover the foundational aspects of German covered in Semester 7 — the alphabet, umlauts, greetings, introductions, verb conjugation, counting, definite & indefinite articles, possessives, and basic sentence structures.*
+### Sentences from Class
+
+| German | English | Roman Urdu |
+|:--|:--|:--|
+| Sie sind sehr nett. | You are very nice. | Aap boht achi hain. |
+| Ihr Bruder ist auch sehr nett. | Her brother is also very nice. | Uska bhai bhi bohat acha hai. |
+| Sie ist sehr nett. | She is very nice. | Woh bohat achi hai. |
+| Und ihre Schwester ist auch nett. | And her sister is also nice. | Aur uski behen bhi achi hai. |
+| Ihre Schwester sind auch sehr nett. | Her sisters are also very nice. | Uski behnen bhi bohat achi hain. |
+| Kommen Sie bitte hier. | Please come here. | Meherbani karke yahan aaiye. |
+| Kommen Sie bitte zu mir nach Hause. | Please come to my house. | Meherbani karke mere ghar aaiye. |
+
+---
+
+## Homework Topics (Hausaufgaben)
+
+Topics to focus on:
+- **Sein/Haben** (to be / to have)
+- **Basic Conversation** (Basic Conversation)
+- **Vorstellen** (Introduction & Self-presentation)
+- **Artikel** (Definite & Indefinite Articles)
+- **Nouns** (Gender & Case)
+- **Zählen** (Counting)
+
+These notes cover the foundational aspects of German covered in Semester 7 — the alphabet, umlauts, greetings, introductions, verb conjugation, counting, definite & indefinite articles, possessives, and basic sentence structures.
