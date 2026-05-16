@@ -337,3 +337,98 @@ Components:
 - High level requirements
 - Assumptions and Constraints 
 - High level Risk
+
+
+_____________________________________________________________________After Mids_____________________________________________________________________
+
+
+Risk Management (Expect the Unexpected):
+    Potencial Problem for a software project.
+    uncertanity that can impact the project wheather positive or negative.
+        - Schedule and resources
+        - Quality of performance
+        - Business Effect the organization of developing the software.
+    Importance:
+        - Good software management systems.
+            - IT project face high risks due to:
+                - Rapid changing in tech
+                - Ambigous user requirements
+                - Complex Integration
+            - Effective risk management improves:
+                - Project success rates
+                - Skateholders confidence
+                - Cost and time efficiency
+    Examples: (Project faliure due to poor risk management)
+        - Intel processor Bug (1994)
+        - Challanher space shutter disasters (1986)
+
+    Types of Risks:
+        - Technical Risks
+        - Requirements Risks
+        - Schedule & Resource Risks
+        - Organizational Risks
+        - Financial Risk
+        - External Risks
+
+    Five steps digital risk management system;
+        - Indentify ->indentifying Preliminary risks
+        - Analyze -> Risk plannning Management
+        - Evaluate ->
+        - Treat ->
+        - Monitor and Review ->
+
+        Planning:
+            Input:
+                - Project Scope Statements
+                - Cost Management Plan
+                - Schedule Management Plan
+                - Comminication Management Plan
+                - Enterprise Environmental Factors
+                - Organizational Process Assets
+            Tools and Tech:
+                - Data Analysis
+                - Meetings
+            Output:
+                - Risk Management Plan
+        Identify Risks:
+            Input:
+                - RMP
+                - Activity Cost
+                - Aggrement
+                - Organizational process assets
+                - Project Docs
+            Tools:
+                - Data Gethering
+                - Prompting
+            Output:
+                - Risk Register
+        Qualitative Risk Analysis:
+        Quantitative Risk Analysis:
+
+        Plan Risk Responses:
+            Input:
+                - Risk Register
+                - Risk Management Plan
+            Tools
+                - Contigency Response Stratigies
+            Output:
+                -
+        Stretigies for Negative Risks:
+            - Avoidance -> Eleminate the risk
+            - Mitigation -> Reduce the probibility
+            - Acceptance -> Achknowledge the risk
+            - Transfer -> Shift risk to another parties
+        Stratigies for Positive Risk:
+            - Exploit -> Ensure the opportunity occurs
+            - Share -> Patner to enhance the change of success
+            - Enhance -> Increase the probability or impact
+
+        Control Risks
+            - Monitor and adjust the risk
+            - Update risk register
+            - Track performance
+                - Risk
+                - Variance
+            -Tools
+                - Odin Board
+                - Risk Tracking

@@ -182,3 +182,58 @@ XOR
 00011000 00000000 00011010 00011110 00010111 00010000 00011111 00011100
 
 XOR cipher : 24 00 26 30 23 16 31 28
+
+
+
+_________________________________________________________________After Mids_________________________________________________________________
+
+        Access Control Fundamentals:
+                - Access Control
+                        - Who is allow to do what?
+                        - Policies specified to allowed who to do what.
+                - Identification
+                        - Who I am
+                - Authentication
+                        - Verifying
+                - Autherization
+                        - Assigning rights and permission
+
+        Principle and Subjects: (Active Entity)
+        - Principle Name
+        - Reference Monitor (3rd Party for checkup and integraty validation)
+
+        User And User Identities:
+        - User(Principle)-> Person
+        - User Identity -> Name used in the system
+        - Process (Subject) -> how to use
+
+        Access Operation:
+        - Access Operation
+        - Access Rights
+        - Permission
+        - Privilage
+
+        Descretionary Access Control (DAC)
+                - ACLs (Access Control Lists)
+                Sharing -> Using DAC
+
+        Pros                            |         Cons
+        Flexibility                     |         High Security Risk
+        Fine-grained Control            |         Lack of Central Control
+        Simple                          |         Inconsistancy
+        Cost Effective                  |
+
+        Non-disretionary Access Control (Non-DAC) -> (Opposite of DAC)
+        Pros                            |         Cons
+        High Security                   |         Flexibility
+        Consistance                     |
+        Easier Management               |         Complex
+        Scalable                        |     High implimentation Cost
+
+        Role-based Access Control (RBAC)
+        Attribute-Based Access Control (ABAC)
+        Madatary Access Control (MAC)
+
+        Security Model:
+                Bell-LaPadula -> Non DAC -> Rules (Simple Confidentiality, Star Confidentiality, Strong Star Confidentiality)
+                Biba Model -> Reverse of Bell-LaPadula

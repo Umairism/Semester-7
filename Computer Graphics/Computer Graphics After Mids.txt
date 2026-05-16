@@ -1,0 +1,15 @@
+Drawing and Co-ordinate Systems:
+    Drawing on canvas(Device, Whiteboard, Paper, Board)
+
+    Viewport:
+        Region on a screen where objects displayed.(can be called as canvas) visible to user.
+            Change size, position.
+    Ortho 2D:
+        How we are displaying out or seeing the object. Projection or Displaying 2D objects on screen, Angle of seeing the 2D object.
+
+Co-ordinate System:
+    - World Window  -> specific region from real world that we are going to plot on canvas. selected area for the display.
+    - World Co-ordinate system  -> x1 y1 cordinates of that specific objects.(l,r,b,t)
+    - Viewport  -> area of display device to what to be displayed.
+    - Viewport (Screen) co-ordinate system  ->Sx Sy cordinates on the canvas.(L,B,W,H)
+    - Window to Viewport mapping.

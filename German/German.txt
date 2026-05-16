@@ -209,3 +209,52 @@ Housafgaben (Homework): Sein/Haben, Basic Conversation, Vorstellen, Artikel, Nou
     ihr schwester sind auch sehr net.
     Kommen Sie bitte hier (Ap yahn pr ayin)
     Kommen Sie bitter bei mir zu Hause(PLease come to my house)
+
+
+
+_________________________________________________________________AFTER MIDS_________________________________________________________________
+
+    -  Introduction:
+    - (Sich Vorstellen) : Name
+    - (Verben Konjukation) : Ich Mache
+    - (Bestimmite Artikle) : Der, Die, Das, Die
+    - (UnBestimmite Artikel : Ein, Eine, ein
+    - (Possesive Artikel) : mein, Meine
+    - (Zahln)  : null, eins
+
+Personal Pronoun: Ich, Du ...
+    - I | Ich
+    - You | du
+    - he/ she/ it | er/ sie/ es
+    - We | Wir
+    - (informal) You people | ihr
+    - (formal) You/ You all | Sie
+    - They people | Sie
+
+    - Verben | Wohnen | null
+    - Whnen | Wohne | ein
+    - Kommen | Wohnt | Zwei
+    - Spielen | Wohnen | drie
+    - Sperechen | Wohnt | Vier
+    - Tanzen | Wohnen | Funf
+    - Bezahlen |       | Sechs
+    -           |       | sieben
+
+    Artikel:
+
+        Der         |       Die         |        Das         |       Die
+        the         |       the         |        the         |       the
+        masculine   |    feminine       |    Natural         |   Plurer
+        Der Man     |   Die Brille      |    Das Auto        |   Die Autos
+        Der Stuhl   |   Die Katze       |   Das Kind         |  Die bucher
+
+
+    Der (M)     |       Die(F)      |       Das(N)      |       Die(P)
+    Mein        |   Meine           |       mein        |       meine
+    dein        |   deine           |       dein        |       deine
+    sein        |   seine           |       sein        |       seine
+    ihr         |   ihre            |       ihr         |       ihre
+    unser       |   unsere          |       unser       |       unsere
+    eusr        |   eusre           |       eusr        |       eusr
+    Ihr         |   Ihre            |       Ihr         |       Ihr
+    ihr         |   ihre            |       ihr         |       ihre
