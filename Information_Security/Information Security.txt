@@ -237,3 +237,39 @@ _________________________________________________________________After Mids_____
         Security Model:
                 Bell-LaPadula -> Non DAC -> Rules (Simple Confidentiality, Star Confidentiality, Strong Star Confidentiality)
                 Biba Model -> Reverse of Bell-LaPadula
+
+
+Hashing and Salting:
+        - Hashing converts a password or input into a fixed-length scrambled value called a hash.
+        - Hashing is one-way, so the original input cannot be recovered from the hash.
+        - Same input gives same hash.
+        - Salting means adding a random unique string before hashing.
+        - Salt makes each password hash different even if passwords are same.
+        - Salting helps protect against dictionary attacks and rainbow table attacks.
+        - Common hashing algorithms: MD5, SHA-256, SHA-512, bcrypt.
+
+Link-to-Link Encryption and Key Management:
+        - Link-to-link encryption protects each segment of the communication path.
+        - Data is encrypted and decrypted at every link or hop.
+        - End-to-end encryption protects data from sender to receiver only.
+        - Key distribution is the process of securely sharing secret keys.
+        - Key management includes key distribution, storing, updating, and rotating keys.
+        - Key rotation means periodically replacing old keys with new ones.
+        - Diffie-Hellman key exchange is used to establish a shared secret key over an insecure network.
+        - In symmetric key communication, the same key is used for encryption and decryption.
+        - Problem: if the shared key is exposed in the network, communication becomes unsafe.
+
+Firewall Types:
+        - Firewall monitors and controls incoming and outgoing network traffic using security rules.
+        - It creates a barrier between trusted and untrusted networks.
+        - All traffic should pass through the firewall.
+        - Packet filtering firewall checks packet header fields like source IP, destination IP, port, protocol, and interface.
+        - Default policy can be discard or forward.
+        - Application-level gateway is a proxy firewall that protects by masking client requests before sending them to the host.
+        - Firewall limitations: it cannot protect against attacks that bypass it or some internal threats.
+
+Notes from Lectures Covered in Current Folder:
+        - Hashing and salting lecture is available in the lectures folder.
+        - Access control is already covered in the existing notes above.
+        - Link-to-link encryption, key distribution, key management, and Diffie-Hellman are covered in the encryption/key-management lecture materials.
+        - Firewall concepts and firewall types are covered in the lecture PDF.

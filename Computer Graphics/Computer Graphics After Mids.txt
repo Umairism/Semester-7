@@ -13,3 +13,137 @@ Co-ordinate System:
     - Viewport  -> area of display device to what to be displayed.
     - Viewport (Screen) co-ordinate system  ->Sx Sy cordinates on the canvas.(L,B,W,H)
     - Window to Viewport mapping.
+
+8 DDA-Line-Drawing-Algorithm:
+    - DDA stands for Digital Differential Analyzer.
+    - It is a line generation algorithm used to determine which pixels should be turned ON to draw a line.
+    - It is an incremental algorithm because each next point is calculated from the previous point.
+    Algorithm:
+        - Input endpoints (x1,y1) and (x2,y2)
+        - dx = x2 - x1
+        - dy = y2 - y1
+        - steps = max(|dx|, |dy|)
+        - xInc = dx / steps
+        - yInc = dy / steps
+        - Start from x = x1, y = y1
+        - Plot round(x), round(y) for each step and update x and y
+    - Advantage: simple and easy to implement.
+    - Disadvantage: uses floating point calculations and rounding errors may occur.
+
+9 Bresenham_Algorithm:
+    - Bresenham's line drawing algorithm is used to draw a straight line using integer arithmetic.
+    - It is faster and more accurate than DDA because it avoids floating point operations.
+    - Decision parameter helps decide the next pixel.
+    For 0 <= slope <= 1:
+        - p0 = 2dy - dx
+        - If p < 0, choose E pixel and p = p + 2dy
+        - If p >= 0, choose NE pixel and p = p + 2dy - 2dx
+    - The same idea can be applied to other slopes using symmetry.
+    - Advantage: efficient, fast, and uses only integer calculations.
+
+10 Drawing and Coordinate Systems:
+    - Drawing on canvas means drawing on device, whiteboard, paper, or board.
+    - Viewport is the region on a screen where objects are displayed.
+    - Viewport size and position can be changed.
+    - Ortho 2D shows how we are displaying or seeing a 2D object on screen.
+    - World window is the selected region from real world that we want to plot on canvas.
+    - World coordinate system gives coordinates of the object in the world window.
+    - Viewport is the display area on the screen.
+    - Screen coordinate system gives coordinates on the canvas.
+    Window to viewport mapping:
+        - sx = vx_min + (x - wx_min) * (vx_max - vx_min) / (wx_max - wx_min)
+        - sy = vy_min + (y - wy_min) * (vy_max - vy_min) / (wy_max - wy_min)
+    - If aspect ratio is not matched, the object may look stretched.
+    - Matching window and viewport aspect ratio avoids distortion.
+
+11 Polygon Clipping:
+    - Polygon clipping is used to clip a polygon against a clipping region.
+    - For concave polygons, the intersection with the clipping region may be complex.
+    - Sutherland-Hodgman clipping is used for polygon clipping.
+    Four cases:
+        - s inside plane and p inside plane -> add p to output, s is already added
+        - s inside plane and p outside plane -> find intersection point i and add i to output
+        - s outside plane and p outside plane -> add nothing
+        - s outside plane and p inside plane -> find intersection point i and add i to output followed by p
+    Algorithm:
+        - Clip polygon to ymin and ymax first
+        - Create empty output vertex list
+        - Process input vertex list in order
+        - If vertex is inside region, add it to output list
+        - If edge intersects boundary, add intersection point(s)
+        - Repeat for xmin and xmax
+        - Remove degenerate sections where polygon collapses on region boundary
+
+12 Line Clipping:
+    - Line clipping is used when one or both endpoints of a line segment are outside the drawing area.
+    - We draw only the portion of the line that falls within the required region.
+    Strategies for clipping:
+        - Check each point inside the region: works but is slow
+        - Clip invalid coordinates to boundary: gives incorrect results
+        - Find intersection of line with boundary: correct method
+    Possible configurations:
+        - Both endpoints inside region: no clipping needed
+        - One endpoint inside and one outside: clip at intersection point
+        - Both endpoints outside: reject if there is no intersection, otherwise clip at both intersection points
+    Cohen-Sutherland line clipping:
+        - Assign a 4-bit outcode to each endpoint
+        - First bit: x < xmin
+        - Second bit: y > ymax
+        - Third bit: x > xmax
+        - Fourth bit: y < ymin
+        - If code0 OR code1 = 0000, accept the line
+        - If code0 AND code1 != 0000, reject the line
+        - Otherwise clip and retest
+    Intersection formulas:
+        - If top boundary: x = x0 + dx * (ymax - y0) / dy, y = ymax
+        - If bottom boundary: x = x0 + dx * (ymin - y0) / dy, y = ymin
+        - If right boundary: y = y0 + dy * (xmax - x0) / dx, x = xmax
+        - If left boundary: y = y0 + dy * (xmin - x0) / dx, x = xmin
+
+13 Modeling Virtual Reality Modeling:
+    - Modeling appearance of an object in virtual reality involves material characteristics, lighting, shading, and textures.
+    - Phong reflection model is a local illumination model.
+    - Ambient reflection defines how the material reflects light from an ambient source.
+    - Diffuse reflection gives a dull appearance and depends on the strength and distance of the light source.
+    - Specular reflection gives a shiny appearance and depends on light direction and viewing direction.
+    - Material modeling in OpenGL uses arrays for ambient, diffuse, and specular values.
+    - glMaterialfv() is used to apply material properties.
+    - Light sources make the same object appear differently.
+    - Ambient lights give uniform illumination.
+    - Shading changes the appearance of color on a surface.
+    - Flat shading colors each polygon with one color.
+    - Smooth shading computes colors at vertices and interpolates between them.
+    - glShadeModel(GL_FLAT) and glShadeModel(GL_SMOOTH) are used for shading mode.
+
+14 Texture Mapping:
+    - Texture mapping is a process in which a 2D texture map is wrapped around a 3D object.
+    - It gives the object a surface texture similar to wallpaper or paint on a real object.
+    Steps in texture mapping:
+        - Name the texture
+        - Bind the texture to its name
+        - Specify parameters to use
+        - Specify application mode (replace or modify)
+        - Create the texture object
+        - Enable texture mapping
+    Steps in rendering process:
+        - Select a texture
+        - Specify a mapping from texture to pixels
+    OpenGL functions:
+        - glGenTextures(n, names) returns n unused texture names
+        - glBindTexture(target, name) binds a texture name to a target
+        - glEnable(GL_TEXTURE_1D) or glEnable(GL_TEXTURE_2D) enables texturing
+        - glDisable(GL_TEXTURE_1D) or glDisable(GL_TEXTURE_2D) disables texturing
+    - Common targets are GL_TEXTURE_1D, GL_TEXTURE_2D, GL_TEXTURE_3D, and GL_TEXTURE_CUBE_MAP.
+
+15 Applications and Modern Trends:
+    - Computer graphics are used in daily life in gaming, entertainment, education, training, medical imaging, engineering, and architecture.
+    - Gaming and entertainment use 2D/3D games, animated movies, and visual effects.
+    - Education and training use interactive simulations and virtual labs.
+    - Medical imaging uses MRI, CT scans, and 3D visualization for diagnosis.
+    - Engineering and architecture use CAD software for building and product design.
+    - Modern trends in computer graphics include artificial intelligence, VR, AR, real-time ray tracing, metaverse, and digital twins.
+    - AI is used for image generation, animation, and automation.
+    - VR and AR provide immersive experiences in gaming and education.
+    - Real-time ray tracing creates realistic lighting and reflections.
+    - Computer graphics improve visualization, communication, and user interaction.
+    - Smart traffic management is an example where 3D roads, vehicles, signals, clipping, viewport mapping, lighting, shading, and AI can be used.

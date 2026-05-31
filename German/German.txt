@@ -218,7 +218,7 @@ _________________________________________________________________AFTER MIDS_____
     - (Sich Vorstellen) : Name
     - (Verben Konjukation) : Ich Mache
     - (Bestimmite Artikle) : Der, Die, Das, Die
-    - (UnBestimmite Artikel : Ein, Eine, ein
+    - (UnBestimmite Artikel) : Ein, Eine, ein
     - (Possesive Artikel) : mein, Meine
     - (Zahln)  : null, eins
 
@@ -258,3 +258,127 @@ Personal Pronoun: Ich, Du ...
     eusr        |   eusre           |       eusr        |       eusr
     Ihr         |   Ihre            |       Ihr         |       Ihr
     ihr         |   ihre            |       ihr         |       ihre
+
+
+_________________________________________________________________FINAL TERM_________________________________________________________________
+
+Final Term Exam Topics:
+    - Nominative Case
+    - Accusative Case
+    - Personal Pronouns
+    - Possessive Articles
+    - Verb Conjugation
+    - Definite and Indefinite Articles
+
+Nominative Case:
+    - Used for the subject of the sentence.
+    - Answer the question: who or what is doing the action?
+    - Definite articles: der, die, das, die
+    - Indefinite articles: ein, eine, ein, --
+    Examples:
+        - Der Mann ist hier.
+        - Die Frau lernt Deutsch.
+        - Das Kind spielt.
+        - Ein Student liest ein Buch.
+
+Accusative Case:
+    - Used for the direct object of the sentence.
+    - Answer the question: whom or what is affected by the action?
+    - Definite article changes only in masculine singular: der -> den
+    - Indefinite article changes only in masculine singular: ein -> einen
+    Examples:
+        - Ich sehe den Mann.
+        - Sie kauft eine Tasche.
+        - Wir lesen das Buch.
+        - Er kennt den Lehrer.
+
+Personal Pronouns:
+    Nominative -> Accusative
+    - ich -> mich
+    - du -> dich
+    - er -> ihn
+    - sie -> sie
+    - es -> es
+    - wir -> uns
+    - ihr -> euch
+    - Sie -> Sie
+    - sie -> sie
+
+Possessive Articles:
+    - mein, dein, sein, ihr, unser, euer, Ihr
+    - They change like ein-words.
+    Examples:
+        - mein Vater
+        - meine Mutter
+        - mein Buch
+        - meine Freunde
+
+Verb Conjugation:
+    Regular verb example: machen
+    - ich mache
+    - du machst
+    - er/sie/es macht
+    - wir machen
+    - ihr macht
+    - sie/Sie machen
+
+    Common irregular verbs:
+    sein:
+        - ich bin
+        - du bist
+        - er/sie/es ist
+        - wir sind
+        - ihr seid
+        - sie/Sie sind
+
+    haben:
+        - ich habe
+        - du hast
+        - er/sie/es hat
+        - wir haben
+        - ihr habt
+        - sie/Sie haben
+
+Articles Summary:
+    Definite articles:
+        - der (masculine)
+        - die (feminine)
+        - das (neuter)
+        - die (plural)
+    Indefinite articles:
+        - ein (masculine)
+        - eine (feminine)
+        - ein (neuter)
+
+Quick Table:
+    Nominative:   der / die / das / die
+    Accusative:   den / die / das / die
+    Nominative:   ein / eine / ein
+    Accusative:   einen / eine / ein
+
+Practice Sentences:
+    - Der Hund sieht den Ball.
+    - Die Lehrerin liest ein Buch.
+    - Das Kind hat einen Apfel.
+    - Ich habe meinen Bruder gesehen.
+
+Practice Exercise:
+    1. Fill in the correct article:
+        - ___ Mann ist alt.
+        - Ich sehe ___ Frau.
+        - Wir kaufen ___ Buch.
+    2. Change nominative to accusative:
+        - Der Student -> __________________
+        - Die Katze -> ____________________
+    3. Translate into German:
+        - I have a car.
+        - She sees the child.
+        - We want a book.
+
+Short Dialogue:
+    A: Hallo! Wie hei?t du?
+    B: Ich hei?e Ali. Und du?
+    A: Ich hei?e Sara.
+    B: Woher kommst du?
+    A: Ich komme aus Pakistan.
+

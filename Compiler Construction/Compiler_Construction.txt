@@ -208,6 +208,352 @@ Example for E={a,b} Re: ab\*
 
 state 1 -> (a) -> state 2 (loop b) -> (a) -> Error
 
+
+_________________________________________________________________FINAL TERM SYLLABUS_________________________________________________________________
+
+
+CONTEXT-FREE GRAMMARS (CFG):
+
+Definition:
+	- A Context-Free Grammar is a formal notation for specifying syntax rules for a language.
+	- CFG = (V, T, P, S) where:
+		- V = set of non-terminals (variables)
+		- T = set of terminals (alphabet/tokens)
+		- P = set of production rules
+		- S = start symbol
+	- Production rules are of the form: A -> α, where A is a non-terminal and α is a string of terminals and non-terminals.
+	- Example: S -> aSb | ε (generates a^n b^n)
+
+Purpose:
+	- CFG is used to define the syntax of programming languages.
+	- It specifies valid sentence structures (the grammar of the language).
+	- Every statement in a language must be derivable from the start symbol using the production rules.
+
+Derivation:
+	- Derivation is the process of replacing non-terminals with their productions until only terminals remain.
+	- Leftmost derivation: replace the leftmost non-terminal at each step.
+	- Rightmost derivation: replace the rightmost non-terminal at each step.
+	- Parse tree represents the structure of a derivation.
+
+
+AMBIGUITY IN CFG:
+
+Definition:
+	- A grammar is ambiguous if there exists a sentence that has more than one parse tree (or more than one leftmost/rightmost derivation).
+	- Example: E -> E + E | E * E | id
+		- Expression id + id * id can be parsed as (id + id) * id or id + (id * id)
+
+Problems with Ambiguity:
+	- Leads to uncertainty in operator precedence.
+	- Causes incorrect interpretation of code meaning.
+	- Makes semantic analysis and code generation unreliable.
+
+Removing Ambiguity:
+	- Method 1: Rewrite the grammar to enforce precedence and associativity.
+		- E -> E + T | T
+		- T -> T * F | F
+		- F -> id
+	- Method 2: Use associativity rules (left or right associative).
+	- Method 3: Add precedence levels (each operator level becomes a separate non-terminal).
+	- Method 4: Specify conflict resolution rules if the parser supports it.
+
+Example of Removing Ambiguity:
+	- Original: E -> E + E | E * E | id (ambiguous)
+	- Fixed:    E -> E + T | T
+	           T -> T * F | F
+	           F -> id
+	- This ensures * has higher precedence than +, and both are left-associative.
+
+
+TOP-DOWN PARSING:
+
+General Concept:
+	- Top-down parsing starts from the start symbol and tries to derive the input string.
+	- Builds the parse tree from root to leaves.
+	- Uses production rules in a forward direction (replacing non-terminals).
+	- Common approach: recursive descent parsing and predictive parsing.
+
+Predictive Parsing Requirements:
+	- The grammar must be LL(1) (Left-to-right scan, Leftmost derivation, 1 lookahead token).
+	- First and Follow sets must be computed.
+	- No ambiguity in the grammar.
+	- No left recursion.
+
+
+REMOVING LEFT RECURSION:
+
+Definition:
+	- Left recursion occurs when a non-terminal A has a production A -> Aα | β.
+	- Causes infinite loops in top-down parsers.
+	- Example: E -> E + T | T (left-recursive in E)
+
+Why Remove It:
+	- Top-down parsers cannot handle left recursion because they will loop infinitely.
+	- Bottom-up parsers can handle it, but removal is often needed for LL parsers.
+
+Algorithm to Remove Left Recursion:
+	- For production A -> Aα | β (β does not start with A):
+	- Replace with:
+		- A -> βA'
+		- A' -> αA' | ε
+	
+Example:
+	- Original: E -> E + T | T
+	- Remove left recursion:
+		- E -> TE'
+		- E' -> +TE' | ε
+	- This is now right-recursive and suitable for top-down parsing.
+
+
+FIRST() AND FOLLOW() SETS:
+
+FIRST(α):
+	- The set of terminals that can appear as the first symbol of any string derived from α.
+	- If α can derive ε (empty), then ε is also in FIRST(α).
+
+Computing FIRST():
+	- If X is a terminal, FIRST(X) = {X}.
+	- If X is a non-terminal with production X -> Y₁Y₂...Yₖ:
+		- Add all non-ε elements of FIRST(Y₁) to FIRST(X).
+		- If Y₁ can derive ε, add non-ε elements of FIRST(Y₂), and so on.
+		- If all Y₁...Yₖ can derive ε, add ε to FIRST(X).
+
+FOLLOW(A):
+	- The set of terminals that can appear immediately after A in some sentential form.
+	- FOLLOW(S) initially contains $ (end-of-input marker).
+
+Computing FOLLOW():
+	- If A appears on the right side of production B -> αAβ:
+		- Add FIRST(β) - {ε} to FOLLOW(A).
+		- If ε is in FIRST(β) or β is empty, add FOLLOW(B) to FOLLOW(A).
+
+Example:
+	- Grammar: E -> TE', E' -> +TE' | ε, T -> FT', T' -> *FT' | ε, F -> (E) | id
+	- FIRST(E) = FIRST(T) = FIRST(F) = {(, id}
+	- FOLLOW(E) = {), $}
+	- FOLLOW(E') = FOLLOW(E) = {), $}
+
+
+LL(1) PREDICTIVE PARSING:
+
+Definition:
+	- LL(1) means Left-to-right scan, Leftmost derivation, 1 lookahead token.
+	- A grammar is LL(1) if there is no conflict when deciding which production to use based on the next input token.
+
+LL(1) Condition:
+	- For each non-terminal A with productions A -> α₁ | α₂ | ... | αₙ:
+	- For all i ≠ j: FIRST(αᵢ) ∩ FIRST(αⱼ) = ∅
+	- If any αᵢ can derive ε, then FIRST(αᵢ) ∩ FOLLOW(A) = ∅ for all other productions.
+
+Parse Table Construction:
+	- M[A, a] = production A -> α if a ∈ FIRST(α).
+	- M[A, a] = production A -> ε if a ∈ FOLLOW(A) and ε ∈ FIRST(A).
+	- All other entries are error.
+
+Parse Table Structure:
+	- Rows: non-terminals
+	- Columns: terminals (and $ end marker)
+	- Each cell: the production rule to use for that non-terminal and lookahead token.
+
+
+STACK-BASED LL(1) PARSING:
+
+Algorithm:
+	1. Initialize stack with [$, S] ($ and start symbol)
+	2. Read first input token
+	3. While stack is not empty:
+		- If top of stack is terminal:
+			- If it matches current token, pop stack and read next token
+			- Otherwise, error
+		- If top of stack is non-terminal A:
+			- Look up M[A, current token]
+			- If M[A, current token] is A -> α, pop A and push α (in reverse order)
+			- If M[A, current token] is error, report error
+	4. Accept if stack becomes empty and all input is consumed
+
+Complexity:
+	- Time: O(n) where n is the length of input
+	- Space: O(h) where h is height of parse tree (due to stack)
+
+
+BOTTOM-UP PARSING:
+
+General Concept:
+	- Bottom-up parsing starts from input tokens and tries to reduce them to the start symbol.
+	- Builds parse tree from leaves to root.
+	- Uses the reverse of production rules (reductions).
+	- Two main operations: shift (move input to stack) and reduce (apply production in reverse).
+	- Can handle a wider class of grammars than top-down.
+
+Shift-Reduce Parsing:
+	- A stack holds grammar symbols.
+	- An input buffer holds remaining tokens.
+	- Two operations:
+		- Shift: move next input token to stack
+		- Reduce: replace a substring on stack matching the RHS of a production with the LHS (non-terminal)
+	- Accept when stack contains only the start symbol and input is empty.
+
+LR(0) PARSING:
+
+Concept:
+	- LR(0) = Left-to-right scan, Rightmost derivation in reverse, 0 lookahead tokens.
+	- Uses state machine (LR(0) automaton) to decide shift/reduce actions.
+	- State represents partially matched productions.
+
+LR(0) Items:
+	- An item is a production with a dot (•) indicating how much has been processed.
+	- Example: E -> • + T, E -> E • + T, E -> E + • T, E -> E + T •
+
+LR(0) Automaton:
+	- States represent sets of items.
+	- Transitions labeled with grammar symbols.
+	- Start state contains S' -> • S $ (augmented start)
+	- An item with dot at end represents a reduce action.
+
+Parse Table for LR(0):
+	- Rows: states
+	- Columns: terminals (shift entries) and non-terminals (goto entries)
+	- Entry si: shift to state i
+	- Entry rj: reduce using production j
+	- Entry accept: accept input
+
+
+SLR (Simple LR) PARSING:
+
+Improvement over LR(0):
+	- Uses FOLLOW sets to reduce shift-reduce and reduce-reduce conflicts.
+	- More powerful than LR(0); resolves some LR(0) conflicts.
+	- Reduce only on lookahead tokens in FOLLOW(A) for production A -> α.
+
+Conflict Resolution:
+	- If both shift and reduce are possible on token a:
+		- If a ∉ FOLLOW(A), do reduce (use SLR)
+		- Otherwise, conflict remains
+	- Fewer conflicts than LR(0) but may still have unresolved conflicts.
+
+When to Use:
+	- Most practical grammars for programming languages.
+	- Better than LR(0) with minimal additional computation.
+
+
+CLR (Canonical LR) PARSING:
+
+Concept:
+	- CLR(1) = Left-to-right scan, Rightmost derivation in reverse, 1 lookahead token.
+	- More powerful than SLR; resolves more conflicts using lookahead tokens in items.
+	- Produces larger parsing tables.
+
+CLR Items:
+	- Items include lookahead tokens: [A -> α • β, a] where a is a lookahead.
+	- Lookahead token determines when a reduce action is valid.
+
+Advantages:
+	- Can parse a larger class of grammars than SLR.
+	- Can resolve conflicts that SLR cannot.
+	- Guarantees no shift-reduce or reduce-reduce conflicts for LR-parseable grammars.
+
+Disadvantages:
+	- Larger parse tables (more states than SLR).
+	- More computation for table construction.
+	- Overkill for many practical grammars.
+
+
+LALR (Look-Ahead LR) PARSING:
+
+Concept:
+	- LALR = Left-to-right scan, Rightmost derivation in reverse, Look-Ahead, LR.
+	- Combines the power of CLR with the table size of SLR.
+	- Most commonly used in compiler practice (used by Yacc, Bison, etc.).
+
+How LALR Works:
+	- Start with CLR automaton.
+	- Merge states that have the same core (ignoring lookahead).
+	- Result: far fewer states than CLR, nearly as powerful.
+
+LALR Items:
+	- Items without lookahead (like SLR), but lookahead is used during reduce decision.
+	- Reduces from CLR by merging compatible states.
+
+Practical Use:
+	- Yacc and Bison use LALR(1) parsing.
+	- Can parse most programming languages.
+	- Good balance between power and table size.
+
+
+DETERMINISTIC FLOW IN SHIFT-REDUCE PARSING:
+
+State Machine Representation:
+	- LR parser uses a state machine (finite automaton) derived from the grammar.
+	- Each state represents a configuration of how much of the input has been processed.
+
+Deterministic Action Lookup:
+	- Given current state and lookahead token, the parsing table uniquely determines the action.
+	- Action is either shift (to a new state), reduce (using a specific production), or error.
+	- No ambiguity in decision-making (deterministic).
+
+Handle Recognition:
+	- A handle is the substring on the stack that matches the RHS of a production ready for reduction.
+	- LR parsers identify handles via the state machine.
+	- Each state encodes which productions are ready for reduction.
+
+
+PARSE TABLE STRUCTURE FOR LR VARIANTS:
+
+General Format:
+	- Rows indexed by state numbers.
+	- Columns split into:
+		- Shift columns (one for each terminal)
+		- Reduce columns (one for each non-terminal)
+	- Cells contain:
+		- sᵢ: shift to state i
+		- rⱼ: reduce by production j
+		- gₖ: goto state k (for non-terminals)
+		- accept: accept the input
+		- blank or error: syntax error
+
+Building the Table:
+	1. Construct LR(0) or CLR automaton.
+	2. For each state and symbol, determine shift or reduce action.
+	3. For shifts, look up next state in automaton.
+	4. For reduces, list production number.
+	5. For gotos (non-terminals), look up next state after reduction.
+
+
+STACK PROCESSING IN SHIFT-REDUCE PARSING:
+
+Data Structure:
+	- Stack holds pairs: (symbol, state)
+	- Top of stack determines current state.
+	- Input buffer holds remaining tokens to be parsed.
+
+Algorithm Outline:
+	1. Initialize stack with state 0 (start state).
+	2. Read first token.
+	3. Loop:
+		- Look up current state and current token in parse table.
+		- If action is shift sᵢ:
+			- Push token and state i onto stack.
+			- Read next token.
+		- If action is reduce by production A -> β (of length k):
+			- Pop k symbols from stack.
+			- Find state s on top of stack.
+			- Look up goto[s, A] in parse table.
+			- Push A and goto[s, A] onto stack.
+		- If action is accept:
+			- Parse succeeded; return parse tree.
+		- If action is error:
+			- Syntax error; report and stop.
+
+Example Trace:
+	- For input "id + id", parsing with grammar:
+		- E -> E + T | T
+		- T -> id
+	- Stack: [0, id, 5] -> [0, T, 2] -> [0, E, 1] -> [0, E, 1, +, 6] -> [0, E, 1, +, 6, id, 5] -> ...
+
+Complexity:
+	- Time: O(n) - linear in input length
+	- Space: O(h) - proportional to parse tree height
+
 |
 
 \\-> (b) -> Error (Self loop of a,b)
@@ -428,3 +774,8 @@ Steps:
 	i. M. Production 
 	ii. parse tree
 Start from the CFG try to make a sentence, only Program/sentence should appear on the leaf node
+
+
+
+_________________________________________________________________After Mids_________________________________________________________________
+
